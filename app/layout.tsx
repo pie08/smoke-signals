@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Bebas_Neue } from "next/font/google";
 import "./_styles/global.scss";
 
+// import fonts
 const poppins = Poppins({
   weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
@@ -16,11 +17,13 @@ const bebasNeue = Bebas_Neue({
   variable: "--font-bebas-neue",
 });
 
+// add metadata
 export const metadata: Metadata = {
   title: "Smoke Signals",
   description: "Smoke shop in Dover, NH",
 };
 
+// create root
 export default function RootLayout({
   children,
 }: Readonly<{
