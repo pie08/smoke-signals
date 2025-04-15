@@ -4,6 +4,7 @@
   background-color: var(--color-gray-white);
   position: fixed;
   width: 100vw;
+  z-index: 999;
 
   &:hover {
     .navItem {
