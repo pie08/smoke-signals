@@ -1,6 +1,36 @@
 @import "../../node_modules/modern-normalize/modern-normalize.css";
 
 // * colors here
+:root {
+  --color-primary-50: #fde7e7;
+  --color-primary-100: #fcd0cf;
+  --color-primary-200: #f89c9b;
+  --color-primary-300: #f56d6b;
+  --color-primary-400: #f23936;
+  --color-primary-500: #e5130f;
+  --color-primary-600: #b20f0c;
+  --color-primary-700: #860b09;
+  --color-primary-800: #5b0806;
+  --color-primary-900: #2b0403;
+  --color-primary-950: #180202;
+
+  --color-gray-white: #fff;
+  --color-gray-50: #f8fafc;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-400: #94a3b8;
+  --color-gray-500: #64748b;
+  --color-gray-600: #475569;
+  --color-gray-700: #334155;
+  --color-gray-800: #1e293b;
+  --color-gray-900: #0f172a;
+  --color-gray-950: #020617;
+  --color-gray-black: #000;
+
+  --color-green-100: #dcfce7;
+  --color-green-400: #4ade80;
+}
 
 *,
 *::after,
@@ -27,6 +57,36 @@ body {
 }
 
 // * heading styles
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--color-gray-800);
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: var(--font-bebas-neue);
+}
+
+h1 {
+  font-size: 9.6rem;
+}
+
+h2 {
+  font-size: 6.4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
 
 a {
   text-decoration: none;
