@@ -60,11 +60,11 @@ const Navigation: FC<NavigationProps> = ({}) => {
             <li className={styles.navItem}>
               <Link
                 className={`${styles.navLink} ${
-                  pathname === "/gallary" ? styles.active : ""
+                  pathname === "/gallery" ? styles.active : ""
                 }`}
-                href={"/gallary"}
+                href={"/gallery"}
               >
-                GALLARY
+                GALLERY
               </Link>
             </li>
             <li className={styles.navItem}>
