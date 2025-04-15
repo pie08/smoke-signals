@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins, Bebas_Neue } from "next/font/google";
-import "../_styles/global.scss";
-import Navigation from "../_components/Navigation";
-import Footer from "../_components/Footer";
+import "./_styles/global.scss";
+import Navigation from "./_components/Navigation";
+import Footer from "./_components/Footer";
 import { Toaster } from "react-hot-toast";
 
 // import fonts
