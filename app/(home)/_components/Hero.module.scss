@@ -1,0 +1,22 @@
+.hero {
+  min-height: 95vh;
+  background-color: red;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  & h1,
+  & p {
+    color: var(--color-gray-white);
+  }
+
+  & p {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+}

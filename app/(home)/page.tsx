@@ -1,11 +1,12 @@
 import { FC } from "react";
+import Hero from "./_components/Hero";
 
 type pageProps = object;
 
 export default function page({}: pageProps) {
   return (
     <>
-      <h1>HOME</h1>
+      <Hero />
     </>
   );
 }
