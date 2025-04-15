@@ -14,6 +14,12 @@ const Footer: FC<FooterProps> = ({}) => {
         <div className={styles.contact}>
           <a href="tel:6037427473">(603) - 742 - 7473</a>
           <a href="mailto:smokesignalsnh@gmail.com">SMOKESIGNALSNH@GMAIL.COM</a>
+          <a
+            href="https://www.google.com/maps/dir/43.1737986,-70.8862928/291+Central+Ave,+Dover,+NH+03820"
+            target="_blank"
+          >
+            291 Central Ave, Dover
+          </a>
         </div>
 
         <div className={styles.social}>
