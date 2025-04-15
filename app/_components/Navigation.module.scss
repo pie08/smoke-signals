@@ -1,0 +1,139 @@
+.header {
+  padding: 2.4rem 4.8rem;
+  border-bottom: 1px solid var(--color-gray-400);
+
+  &:hover {
+    .navItem {
+      opacity: 50%;
+    }
+  }
+}
+
+.nav {
+}
+
+.ul {
+  display: flex;
+  gap: 6.4rem;
+  justify-content: center;
+
+  & li {
+    list-style: none;
+  }
+}
+
+.navItem {
+  transition: all 0.2s;
+
+  &:hover {
+    opacity: 100% !important;
+  }
+}
+
+.navLink {
+  box-shadow: inset 0 -2px 0 0 transparent;
+  transition: all 0.2s;
+  font-weight: 600;
+
+  &.active {
+    box-shadow: inset 0 -2px 0 0 var(--color-primary-600);
+  }
+}
+
+// Dropdown styles
+
+// Drop down
+.dropdownParent {
+  position: relative;
+
+  & a {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+
+    cursor: pointer;
+  }
+
+  /* 830 and up */
+  @media screen and (min-width: 52em) {
+    &:hover {
+      & .dropdownWrapper {
+        pointer-events: all;
+      }
+
+      & .dropdownList {
+        opacity: 1;
+        visibility: visible;
+        translate: 0 0;
+      }
+
+      & svg {
+        rotate: 90deg;
+      }
+    }
+  }
+
+  // @media screen and (max-width: 52em) {
+  //   & a {
+  //     display: flex;
+  //     justify-content: space-between;
+  //   }
+  // }
+}
+
+.dropdownWrapper {
+  padding-top: 0.8rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+
+  // @media screen and (max-width: 52em) {
+  //   position: static;
+  //   padding-top: 0;
+  //   pointer-events: all;
+  // }
+}
+
+.dropdownList {
+  width: max-content;
+
+  list-style: none;
+  padding: 1.2rem;
+  background-color: var(--color-gray-white);
+  border-top: 2px solid var(--color-primary-600);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  /* animation */
+  opacity: 0;
+  visibility: hidden;
+  translate: 0 -1.6rem;
+  transition: all 0.2s;
+
+  // @media screen and (max-width: 52em) {
+  //   border-top: none;
+  //   background-color: transparent;
+  //   width: 100%;
+  //   padding: 0;
+  //   gap: 0;
+  //   max-height: 0;
+  //   translate: 0 0;
+  //   pointer-events: none;
+
+  //   & li {
+  //     padding: 0;
+  //     border: none !important;
+  //     color: var(--color-gray-600);
+  //   }
+
+  //   &.open {
+  //     max-height: 25rem;
+  //     opacity: 1;
+  //     visibility: visible;
+  //     pointer-events: all;
+  //   }
+  // }
+}
