@@ -12,15 +12,18 @@ const Footer: FC<FooterProps> = ({}) => {
         <h3>SMOKIN&apos; GOOD SINCE 2001</h3>
 
         <div className={styles.contact}>
-          <a href="">(603) - 742 - 7473</a>
-          <a href="">SMOKESIGNALSNH@GMAIL.COM</a>
+          <a href="tel:6037427473">(603) - 742 - 7473</a>
+          <a href="mailto:smokesignalsnh@gmail.com">SMOKESIGNALSNH@GMAIL.COM</a>
         </div>
 
         <div className={styles.social}>
-          <a href="">
+          <a href="https://www.facebook.com/smokesignalsnh/" target="_blank">
             <PiFacebookLogoBold />
           </a>
-          <a href="">
+          <a
+            href="https://www.instagram.com/smokesignalsdover/"
+            target="_blank"
+          >
             <PiInstagramLogoBold />
           </a>
         </div>
