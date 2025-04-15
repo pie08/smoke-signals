@@ -3,6 +3,7 @@ import { Poppins, Bebas_Neue } from "next/font/google";
 import "../_styles/global.scss";
 import Navigation from "../_components/Navigation";
 import Footer from "../_components/Footer";
+import { Toaster } from "react-hot-toast";
 
 // import fonts
 const poppins = Poppins({
@@ -35,6 +36,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.variable} ${bebasNeue.variable}`}>
         <Navigation />
+        <Toaster position="top-center" />
         {children}
         <Footer />
       </body>
