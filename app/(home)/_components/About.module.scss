@@ -4,6 +4,12 @@
   gap: 6.4rem;
 }
 
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
 .imageContainer {
   width: 100%;
   display: flex;
