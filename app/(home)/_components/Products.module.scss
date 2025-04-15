@@ -1,0 +1,40 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6.4rem;
+}
+
+.productCard {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  padding: 1.6rem;
+  display: flex;
+  align-items: flex-end;
+  outline: 4px solid transparent;
+  transition: all 0.2s;
+
+  &:nth-child(1) {
+    background-image: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 50%) 20%,
+        transparent
+      ),
+      url("/assets/images/shop/SMOKESIGNALS-15.jpg");
+  }
+
+  &:nth-child(2) {
+    background-image: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 50%) 20%,
+        transparent
+      ),
+      url("/assets/images/shop/SMOKESIGNALS-9.jpg");
+    background-position: 50%;
+  }
+
+  &:hover {
+    outline: 4px solid var(--color-primary-600);
+    scale: 1.1;
+  }
+}

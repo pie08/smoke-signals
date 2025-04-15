@@ -3,14 +3,17 @@ import styles from "./Section.module.scss";
 
 interface SectionProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
+  dark?: boolean;
   [x: string]: any;
 }
 
-const Section: FC<SectionProps> = ({ children, ...props }) => {
+const Section: FC<SectionProps> = ({ children, dark, ...props }) => {
   return (
     <section
       {...props}
-      className={`${styles["section"]} ${props.className ?? ""}`}
+      className={`${styles["section"]} ${dark ? styles.sectionDark : ""} ${
+        props.className ?? ""
+      }`}
     >
       {children}
     </section>
