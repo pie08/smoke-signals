@@ -9,7 +9,7 @@ type AboutProps = object;
 
 const About: FC<AboutProps> = ({}) => {
   return (
-    <Section>
+    <Section dark>
       <Container>
         <h2>ABOUT US</h2>
       </Container>

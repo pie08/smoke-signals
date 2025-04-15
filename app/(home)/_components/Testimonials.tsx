@@ -10,7 +10,7 @@ type TestimonialsProps = object;
 
 const Testimonials: FC<TestimonialsProps> = ({}) => {
   return (
-    <Section>
+    <Section dark>
       <Container>
         <h2>TESTIMONIALS</h2>
       </Container>

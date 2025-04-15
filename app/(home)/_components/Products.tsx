@@ -10,7 +10,7 @@ type ProductsProps = object;
 
 const Products: FC<ProductsProps> = ({}) => {
   return (
-    <Section dark>
+    <Section>
       <Container>
         <h2>PRODUCTS</h2>
       </Container>
