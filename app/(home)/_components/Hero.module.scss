@@ -1,6 +1,13 @@
 .hero {
   min-height: 95vh;
-  background-color: red;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 50%),
+      rgba(0, 0, 0, 50%)
+    ),
+    url("/assets/images/shop/SMOKESIGNALS-48.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .textContainer {
