@@ -113,13 +113,13 @@ const Dropdown: FC<DropdownProps> = ({ children, text }) => {
       </Link>
 
       <div className={styles.dropdownWrapper}>
-        <li className={`${open ? "open" : ""} list ${styles.dropdownList}`}>
+        <ul className={`${open ? "open" : ""} list ${styles.dropdownList}`}>
           {React.Children.map(children, (child, i) => (
             <li className={styles.navItem} key={i}>
               {child}
             </li>
           ))}
-        </li>
+        </ul>
       </div>
     </li>
   );
