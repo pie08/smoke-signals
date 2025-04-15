@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Bebas_Neue } from "next/font/google";
 import "../_styles/global.scss";
 import Navigation from "../_components/Navigation";
+import Footer from "../_components/Footer";
 
 // import fonts
 const poppins = Poppins({
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body className={`${poppins.variable} ${bebasNeue.variable}`}>
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );

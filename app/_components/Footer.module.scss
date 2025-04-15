@@ -1,0 +1,36 @@
+.footer {
+  background-color: var(--color-primary-600);
+  padding: 9.6rem 4.8rem;
+  color: var(--color-gray-50);
+
+  & h3 {
+    color: var(--color-gray-50);
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    align-items: center;
+  }
+}
+
+.contact {
+  font-weight: 600;
+  display: flex;
+  gap: 9.6rem;
+}
+
+.social {
+  display: flex;
+  gap: 9.6rem;
+
+  & a {
+    height: 4.8rem;
+
+    & svg {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
+}
