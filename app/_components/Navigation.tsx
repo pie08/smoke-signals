@@ -107,7 +107,7 @@ const Dropdown: FC<DropdownProps> = ({ children, text }) => {
       className={`${styles["dropdownParent"]} ${styles.navItem}`}
       onClick={() => setOpen((curState) => !curState)}
     >
-      <Link className={styles.navLink} href="">
+      <Link className={styles.navLink} href="/products">
         {text}
         <PiCaretRightBold style={{ transition: "all 0.2s" }} />
       </Link>
