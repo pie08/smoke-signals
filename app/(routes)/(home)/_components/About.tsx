@@ -3,7 +3,7 @@ import Section from "@/app/_components/Section";
 import { FC } from "react";
 import styles from "./About.module.scss";
 import Image from "next/image";
-import aboutImage from "../../../public/assets/images/shop/SMOKESIGNALS-39.jpg";
+import aboutImage from "../../../../public/assets/images/shop/SMOKESIGNALS-39.jpg";
 
 type AboutProps = object;
 

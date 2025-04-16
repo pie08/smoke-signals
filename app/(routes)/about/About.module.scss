@@ -1,0 +1,17 @@
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6.4rem;
+}
+
+.imageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    max-width: 50rem;
+    height: 100%;
+  }
+}

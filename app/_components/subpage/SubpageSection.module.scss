@@ -1,0 +1,12 @@
+.section {
+  padding: 9.6rem 4.8rem;
+  // account for navigation height
+  padding-top: calc(9.6rem + 7.8rem);
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.fill {
+  min-height: 100vh;
+}
