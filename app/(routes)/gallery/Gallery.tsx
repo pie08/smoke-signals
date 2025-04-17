@@ -18,6 +18,10 @@ const Gallery: FC<GalleryProps> = ({ imagePaths }) => {
 
   // dynamically place each image in the shortest column
   useEffect(() => {
+    if (!parentRef.current) return;
+
+    if (parentRef.current?.clientHeight > 0) return;
+
     imagePaths.forEach((image) => {
       if (!parentRef.current) return;
 
@@ -46,38 +50,10 @@ const Gallery: FC<GalleryProps> = ({ imagePaths }) => {
 
   return (
     <div className={styles.gallery} ref={parentRef}>
-      <div>
-        <Image
-          src={imagePaths[0].path}
-          alt="Product image"
-          width={imagePaths[0].width}
-          height={imagePaths[0].height}
-        />
-      </div>
-      <div>
-        <Image
-          src={imagePaths[1].path}
-          alt="Product image"
-          width={imagePaths[1].width}
-          height={imagePaths[1].height}
-        />
-      </div>
-      <div>
-        <Image
-          src={imagePaths[2].path}
-          alt="Product image"
-          width={imagePaths[2].width}
-          height={imagePaths[2].height}
-        />
-      </div>
-      <div>
-        <Image
-          src={imagePaths[3].path}
-          alt="Product image"
-          width={imagePaths[3].width}
-          height={imagePaths[3].height}
-        />
-      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   );
 };
