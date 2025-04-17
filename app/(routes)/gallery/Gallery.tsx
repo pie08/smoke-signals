@@ -42,7 +42,7 @@ const Gallery: FC<GalleryProps> = ({ imagePaths }) => {
       // add html string to innerhtml
       insertElement.innerHTML = insertElement.innerHTML + child;
     });
-  }, [imagePaths, parentRef]);
+  }, [imagePaths]);
 
   return (
     <div className={styles.gallery} ref={parentRef}>
