@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@sendgrid/mail": "^8.1.5",
+    "glob": "^11.0.1",
+    "image-size": "^2.0.2",
     "modern-normalize": "^3.0.1",
     "next": "15.3.0",
     "react": "^19.0.0",
