@@ -31,7 +31,6 @@ async function getAllFilePaths(rootDir: string) {
   const parentPath = process.cwd() + rootDir;
 
   const files = await addAllFilesRecursive(parentPath);
-  console.log(files);
 
   const filesWithData = files.map(async (path) => {
     const { width, height } = await imageSizeFromFile(path);
