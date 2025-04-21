@@ -4,6 +4,7 @@ import SubpageSection from "@/app/_components/subpage/SubpageSection";
 import { FC } from "react";
 import styles from "./Page.module.scss";
 import { PiCaretRightBold } from "react-icons/pi";
+import ParamSelect from "@/app/_components/ParamSelect";
 
 type pageProps = object;
 
@@ -15,9 +16,15 @@ const page: FC<pageProps> = ({}) => {
           <h2>PRODUCTS</h2>
 
           <div className={styles.sort}>
-            <p>SORT BY: </p>
-            <p className={styles.sortCategory}>FEATURED</p>
-            <PiCaretRightBold />
+            <p>SORT BY:</p>
+            <ParamSelect
+              fieldName="sortBy"
+              options={[
+                { value: "featured", label: "FEATURED" },
+                { value: "az", label: "NAME A-Z" },
+                { value: "za", label: "NAME Z-A" },
+              ]}
+            />
           </div>
         </div>
       </SubpageHeading>

@@ -1,0 +1,40 @@
+.select {
+  font-size: 1.8rem;
+  font-family: var(--font-poppins);
+  letter-spacing: 0px;
+  display: flex;
+  gap: 0.8rem;
+  position: relative;
+
+  & svg {
+    transition: all 0.2s;
+  }
+}
+
+.select:global(.open) {
+  & .dropdown {
+    display: flex;
+  }
+
+  & svg {
+    rotate: 90deg;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  translate: 0 0.8rem;
+
+  display: none;
+  width: max-content;
+
+  list-style: none;
+  padding: 1.2rem;
+  background-color: var(--color-gray-50);
+  border-top: 2px solid var(--color-primary-600);
+
+  flex-direction: column;
+  gap: 0.8rem;
+}
