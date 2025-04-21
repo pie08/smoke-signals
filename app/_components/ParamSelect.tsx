@@ -24,8 +24,8 @@ const ParamSelect: FC<ParamSelectProps> = ({ fieldName, options }) => {
   const searchParams = useSearchParams();
   const params = new URLSearchParams(searchParams.toString());
   const currentQuery =
-    options.filter((option) => option.value === params.get(fieldName))[0]
-      .label || options[0].label;
+    options.filter((option) => option.value === params.get(fieldName))[0] ||
+    options[0];
 
   function createQueryString(name: string, value: string) {
     params.set(name, value);
@@ -38,7 +38,7 @@ const ParamSelect: FC<ParamSelectProps> = ({ fieldName, options }) => {
       onClick={() => setIsOpen((state) => !state)}
       ref={ref}
     >
-      <p>{currentQuery}</p>
+      <p>{currentQuery.label}</p>
       <PiCaretRightBold />
 
       <ul className={`${styles.dropdown}`}>

@@ -21,6 +21,7 @@ const page: FC<pageProps> = ({}) => {
               fieldName="sortBy"
               options={[
                 { value: "featured", label: "FEATURED" },
+                { value: "all", label: "ALL" },
                 { value: "az", label: "NAME A-Z" },
                 { value: "za", label: "NAME Z-A" },
               ]}
