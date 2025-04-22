@@ -1,0 +1,57 @@
+[
+  {
+    "imageSrc": "/assets/images/products/disposable-vapes/Adjust disposables.jpeg",
+    "name": "adjust disposable",
+    "type": "nicotineVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/disposable-vapes/Crave disposables.jpeg",
+    "name": "crave disposeable",
+    "type": "nicotineVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/disposable-vapes/Fifty Bar disposable.png",
+    "name": "fifty bar disposable",
+    "type": "nicotineVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/disposable-vapes/Fifty bar fruitia disposable.jpeg",
+    "name": "fifty bar fruitia dispoabale",
+    "type": "nicotineVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/disposable-vapes/Fifty bar hidden hills disposable.jpeg",
+    "name": "fifty bar hidden hills dispoabale",
+    "type": "nicotineVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/disposable-vapes/Geek bar jam edition.jpeg",
+    "name": "geek bar jam edition",
+    "type": "nicotineVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/disposable-vapes/Geek bar pulse.jpeg",
+    "name": "geek bar pulse",
+    "type": "nicotineVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/disposable-vapes/Off stamp.jpeg",
+    "name": "off stamp",
+    "type": "nicotineVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/disposable-vapes/oxbar disposable.jpeg",
+    "name": "oxbar disposable",
+    "type": "nicotineVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/disposable-vapes/Raz gush edition.jpeg",
+    "name": "raz gush edition",
+    "type": "nicotineVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/disposable-vapes/Raz Punch edition.jpeg",
+    "name": "raz punch edition",
+    "type": "nicotineVapes"
+  }
+]

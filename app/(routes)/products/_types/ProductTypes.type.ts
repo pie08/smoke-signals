@@ -8,6 +8,7 @@ export interface FilterState {
   cigars: boolean;
   tobacco: boolean;
   kratom: boolean;
+  [id: string]: boolean;
 }
 
 export enum FilterValues {
@@ -28,4 +29,10 @@ export interface FilterAction {
 export interface ContextState {
   state: FilterState;
   dispatch: ActionDispatch<[action: FilterAction]>;
+}
+
+export interface ProductData {
+  imageSrc: string;
+  name: string;
+  type: string;
 }

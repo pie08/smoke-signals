@@ -1,0 +1,67 @@
+[
+  {
+    "imageSrc": "/assets/images/products/herbal-vapes/crafty plus vaporizer.jpeg",
+    "name": "crafty plus",
+    "type": "herbalVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/herbal-vapes/lookah dragon egg.webp",
+    "name": "lookah dragon egg",
+    "type": "herbalVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/herbal-vapes/lookah mini unicorn.webp",
+    "name": "lookah mini unicorn",
+    "type": "herbalVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/herbal-vapes/lookah seahorse.webp",
+    "name": "lookah seahorse",
+    "type": "herbalVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/herbal-vapes/lookah.jpeg",
+    "name": "lookah",
+    "type": "herbalVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/herbal-vapes/mighty vape.jpeg",
+    "name": "mighty",
+    "type": "herbalVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/herbal-vapes/pax pro vaporizer.webp",
+    "name": "pax pro",
+    "type": "herbalVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/herbal-vapes/peak3.png",
+    "name": "puffco peak",
+    "type": "herbalVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/herbal-vapes/starry vaporizer.jpeg",
+    "name": "starry",
+    "type": "herbalVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/herbal-vapes/venty vaporizer.jpeg",
+    "name": "venty",
+    "type": "herbalVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/herbal-vapes/volcano classic.jpeg",
+    "name": "volcano classic",
+    "type": "herbalVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/herbal-vapes/volcano dry herb.jpeg",
+    "name": "volcano dry herb",
+    "type": "herbalVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/herbal-vapes/volcano hybrid.jpeg",
+    "name": "volcano hybrid",
+    "type": "herbalVapes"
+  }
+]

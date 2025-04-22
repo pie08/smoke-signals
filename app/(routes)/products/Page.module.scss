@@ -21,6 +21,6 @@
 
 .columns {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 3fr;
   gap: 2.4rem;
 }

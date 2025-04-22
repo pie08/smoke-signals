@@ -1,0 +1,19 @@
+.productCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  & p {
+    font-weight: 600;
+  }
+}
+
+.imageContainer {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+
+  & img {
+    object-fit: cover;
+  }
+}
