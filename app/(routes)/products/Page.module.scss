@@ -18,3 +18,9 @@
   gap: 0.8rem;
   align-items: center;
 }
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.4rem;
+}
