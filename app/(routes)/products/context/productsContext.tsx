@@ -21,6 +21,7 @@ const initialState: FilterState = {
   cartBatteries: false,
   cigars: false,
   tobacco: false,
+  nicotinePouches: false,
   kratom: false,
 };
 
@@ -55,6 +56,11 @@ function filterReducer(state: FilterState, action: FilterAction) {
       return {
         ...state,
         tobacco: !state.tobacco,
+      };
+    case FilterValues.NPOUCH:
+      return {
+        ...state,
+        nicotinePouches: !state.nicotinePouches,
       };
     case FilterValues.KRATOM:
       return {
