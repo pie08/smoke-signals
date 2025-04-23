@@ -1,0 +1,87 @@
+[
+  {
+    "imageSrc": "/assets/images/products/vape-juice/bad drip ejuice.jpeg",
+    "name": "bad drip ejuice",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/custard monster.jpeg",
+    "name": "custard monster",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/fruit monster.jpeg",
+    "name": "fruit monster",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/Jam monster ejuice.jpeg",
+    "name": "jam monster",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/juice head.jpeg",
+    "name": "juice head",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/Naked vape juice.jpeg",
+    "name": "naked vape juice",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/nomenon e juice.jpeg",
+    "name": "nomenon ejuice",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/pacha mama ejuice.jpeg",
+    "name": "pacha mama ejuice",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/pod juice.jpeg",
+    "name": "pod ejuice",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/pod monster.jpeg",
+    "name": "pod monster",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/Propoganda vape juice.jpeg",
+    "name": "propoganda vape juice",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/red's e-juice.jpeg",
+    "name": "red's ejuice",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/sad boy salts.jpeg",
+    "name": "sad boy salts",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/Salt Bae eliquid.png",
+    "name": "salt bae eliquid",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/The one vape juice.jpeg",
+    "name": "the one vape juice",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/twist e liquid.jpeg",
+    "name": "twist e liquid",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/vapetasia.jpeg",
+    "name": "vapetasia",
+    "type": "vapeJuice"
+  }
+]

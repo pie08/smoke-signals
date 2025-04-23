@@ -8,6 +8,7 @@ export interface FilterState {
   cigars: boolean;
   tobacco: boolean;
   nicotinePouches: boolean;
+  vapeJuice: boolean;
   kratom: boolean;
   [id: string]: boolean;
 }
@@ -21,6 +22,7 @@ export enum FilterValues {
   TOBACCO = "tobacco",
   KRATOM = "kratom",
   NPOUCH = "nicotinePouches",
+  VJUICE = "vapeJuice",
   RESET = "reset",
 }
 
