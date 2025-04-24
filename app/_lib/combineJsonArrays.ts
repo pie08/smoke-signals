@@ -1,6 +1,6 @@
 import { readFile } from "fs/promises";
 
-export async function combineJsonFiles<T>(files: string[]) {
+export async function combineJsonArrays<T>(files: string[]) {
   let output: T[] = [];
 
   for (const path of files) {

@@ -54,6 +54,36 @@ const Filters: FC<FiltersProps> = ({}) => {
           <li>
             <input
               type="checkbox"
+              name="vapeJuice"
+              id="vapeJuice"
+              checked={filterState.vapeJuice}
+              onChange={() => dispatch({ type: FilterValues.VJUICE })}
+            />
+            <label htmlFor="vapeJuice">
+              VAPE JUICE
+              <span>
+                <PiCheckBold />
+              </span>
+            </label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              name="nicotinePouches"
+              id="nicotinePouches"
+              checked={filterState.nicotinePouches}
+              onChange={() => dispatch({ type: FilterValues.NPOUCH })}
+            />
+            <label htmlFor="nicotinePouches">
+              NICOTINE POUCHES
+              <span>
+                <PiCheckBold />
+              </span>
+            </label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
               name="herbalVapes"
               id="herbalVapes"
               checked={filterState.herbalVapes}

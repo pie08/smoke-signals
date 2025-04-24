@@ -1,0 +1,67 @@
+[
+  {
+    "imageSrc": "/assets/images/products/cart-batteries/ccell palm pro.jpeg",
+    "name": "ccell palm pro",
+    "type": "cartBatteries"
+  },
+  {
+    "imageSrc": "/assets/images/products/cart-batteries/divinci artiq.jpeg",
+    "name": "divinci artiq",
+    "type": "cartBatteries"
+  },
+  {
+    "imageSrc": "/assets/images/products/cart-batteries/eleaf mini.jpeg",
+    "name": "eleaf mini",
+    "type": "cartBatteries"
+  },
+  {
+    "imageSrc": "/assets/images/products/cart-batteries/eleaf mini stick original.jpeg",
+    "name": "eleaf mini stick",
+    "type": "cartBatteries"
+  },
+  {
+    "imageSrc": "/assets/images/products/cart-batteries/lookah turtle.jpeg",
+    "name": "lookah turtle",
+    "type": "cartBatteries"
+  },
+  {
+    "imageSrc": "/assets/images/products/cart-batteries/lookah zero.jpeg",
+    "name": "lookah zero",
+    "type": "cartBatteries"
+  },
+  {
+    "imageSrc": "/assets/images/products/cart-batteries/ooze twist battery.jpeg",
+    "name": "ooze twist",
+    "type": "cartBatteries"
+  },
+  {
+    "imageSrc": "/assets/images/products/cart-batteries/o-pen.webp",
+    "name": "o-pen",
+    "type": "cartBatteries"
+  },
+  {
+    "imageSrc": "/assets/images/products/cart-batteries/pulsar 2.0.jpeg",
+    "name": "pulsar 2.0",
+    "type": "cartBatteries"
+  },
+  {
+    "imageSrc": "/assets/images/products/cart-batteries/Yocan uni 3.0.jpeg",
+    "name": "yocan uni 3.0",
+    "type": "cartBatteries"
+  },
+  {
+    "imageSrc": "/assets/images/products/cart-batteries/yocan uni pro.jpeg",
+    "name": "yocan uni pro",
+    "type": "cartBatteries"
+  },
+  {
+    "imageSrc": "/assets/images/products/cart-batteries/yocan uni s.jpeg",
+    "name": "yocan uni s",
+    "type": "cartBatteries"
+  },
+  {
+    "imageSrc": "/assets/images/products/cart-batteries/yocan uni twist.jpeg",
+    "name": "yocan uni twist",
+    "type": "cartBatteries"
+  }
+]

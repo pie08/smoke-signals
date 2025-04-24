@@ -1,0 +1,27 @@
+[
+  {
+    "imageSrc": "/assets/images/products/nicotine-pouches/al fahker.webp",
+    "name": "al fahker",
+    "type": "nicotinePouches"
+  },
+  {
+    "imageSrc": "/assets/images/products/nicotine-pouches/alp pouch.jpeg",
+    "name": "alp pouch",
+    "type": "nicotinePouches"
+  },
+  {
+    "imageSrc": "/assets/images/products/nicotine-pouches/gpulse.jpeg",
+    "name": "gpulse",
+    "type": "nicotinePouches"
+  },
+  {
+    "imageSrc": "/assets/images/products/nicotine-pouches/juice head pouches.jpeg",
+    "name": "juice head",
+    "type": "nicotinePouches"
+  },
+  {
+    "imageSrc": "/assets/images/products/nicotine-pouches/zimo pouch.jpeg",
+    "name": "zimo",
+    "type": "nicotinePouches"
+  }
+]
