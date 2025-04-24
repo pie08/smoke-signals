@@ -18,15 +18,18 @@ type ParamSelectProps = {
 // todo: normalize width
 const ParamSelect: FC<ParamSelectProps> = ({ fieldName, options }) => {
   const [isOpen, setIsOpen] = useState(false);
+  // detect when click is outside of component
   const ref = useOutsideClick<HTMLButtonElement>(() => setIsOpen(false));
 
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const params = new URLSearchParams(searchParams.toString());
+  // get current query
   const currentQuery =
     options.filter((option) => option.value === params.get(fieldName))[0] ||
     options[0];
 
+  // build query string
   function createQueryString(name: string, value: string) {
     params.set(name, value);
     return params.toString();

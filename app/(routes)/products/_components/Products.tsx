@@ -17,7 +17,6 @@ const Products: FC<ProductsProps> = ({ products }) => {
   const noFilters = !Object.entries(state).some(
     ([key, value]) => value === true
   );
-  console.log(noFilters);
 
   // filter products
   const filteredProducts = products.filter(({ type }) => {
@@ -30,6 +29,7 @@ const Products: FC<ProductsProps> = ({ products }) => {
 
   return (
     <div className={styles.products}>
+      {/* display prducts */}
       {filteredProducts.map((product, i) => (
         <ProductCard imageSrc={product.imageSrc} name={product.name} key={i} />
       ))}
