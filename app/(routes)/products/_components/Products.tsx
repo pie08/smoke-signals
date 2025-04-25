@@ -4,27 +4,22 @@ import React, { FC } from "react";
 import styles from "./Products.module.scss";
 import { ProductData } from "../_types/ProductTypes.type";
 import ProductCard from "./ProductCard";
-import { useProducts } from "../context/productsContext";
+import { useSearchParams } from "next/navigation";
 
 type ProductsProps = {
   products: ProductData[];
 };
 
 const Products: FC<ProductsProps> = ({ products }) => {
-  const { state } = useProducts()!;
-
-  // if no filters
-  const noFilters = !Object.entries(state).some(
-    ([key, value]) => value === true
-  );
+  const filters = useSearchParams().get("filter");
 
   // filter products
   const filteredProducts = products.filter(({ type }) => {
     // if no filter show all
-    if (noFilters) {
-      return true;
-    }
-    return state[type];
+    if (filters === null || filters.length === 0) return true;
+
+    // filter products
+    return filters.includes(type);
   });
 
   return (

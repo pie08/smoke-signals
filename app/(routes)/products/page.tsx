@@ -59,7 +59,7 @@ const page: FC<pageProps> = async ({ searchParams }) => {
       <Container className={styles.columns}>
         <Filters />
 
-        {/* <Products products={products} /> */}
+        <Products products={products} />
       </Container>
     </SubpageSection>
   );

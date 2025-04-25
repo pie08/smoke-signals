@@ -24,7 +24,6 @@ const Filters: FC<FiltersProps> = ({}) => {
 
     setFilters((filters) => [...filters, type]);
   }
-  console.log(filters);
 
   // update url on state change
   useEffect(() => {
