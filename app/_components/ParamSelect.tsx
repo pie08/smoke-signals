@@ -6,6 +6,7 @@ import { PiCaretRightBold } from "react-icons/pi";
 import { usePathname, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useOutsideClick } from "../_lib/useOutsideClick";
+import { createQueryString } from "../_lib/createQueryString";
 
 type ParamSelectProps = {
   fieldName: string;
@@ -29,12 +30,6 @@ const ParamSelect: FC<ParamSelectProps> = ({ fieldName, options }) => {
     options.filter((option) => option.value === params.get(fieldName))[0] ||
     options[0];
 
-  // build query string
-  function createQueryString(name: string, value: string) {
-    params.set(name, value);
-    return params.toString();
-  }
-
   return (
     <button
       className={`${styles.select} ${isOpen ? "open" : ""}`}
@@ -48,7 +43,13 @@ const ParamSelect: FC<ParamSelectProps> = ({ fieldName, options }) => {
         {options.map(({ value, label }) => {
           return (
             <li key={value}>
-              <Link href={pathname + "?" + createQueryString(fieldName, value)}>
+              <Link
+                href={
+                  pathname +
+                  "?" +
+                  createQueryString(fieldName, value, searchParams)
+                }
+              >
                 {label}
               </Link>
             </li>

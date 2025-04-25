@@ -5,7 +5,6 @@ import { FC } from "react";
 import styles from "./Page.module.scss";
 import ParamSelect from "@/app/_components/ParamSelect";
 import Filters from "./_components/Filters";
-import ProductsContextProvider from "./context/productsContext";
 import ProductCard from "./_components/ProductCard";
 import Products from "./_components/Products";
 import { getProductsData } from "./_lib/getProductsData";
@@ -38,33 +37,31 @@ const page: FC<pageProps> = async ({ searchParams }) => {
     });
 
   return (
-    <ProductsContextProvider>
-      <SubpageSection fill>
-        <SubpageHeading>
-          <div className={styles.heading}>
-            <h2>PRODUCTS</h2>
+    <SubpageSection fill>
+      <SubpageHeading>
+        <div className={styles.heading}>
+          <h2>PRODUCTS</h2>
 
-            <div className={styles.sort}>
-              <p>SORT BY:</p>
-              <ParamSelect
-                fieldName="sortBy"
-                options={[
-                  { value: "all", label: "ALL" },
-                  { value: "featured", label: "FEATURED" },
-                  { value: "az", label: "NAME A-Z" },
-                  { value: "za", label: "NAME Z-A" },
-                ]}
-              />
-            </div>
+          <div className={styles.sort}>
+            <p>SORT BY:</p>
+            <ParamSelect
+              fieldName="sortBy"
+              options={[
+                { value: "all", label: "ALL" },
+                { value: "featured", label: "FEATURED" },
+                { value: "az", label: "NAME A-Z" },
+                { value: "za", label: "NAME Z-A" },
+              ]}
+            />
           </div>
-        </SubpageHeading>
-        <Container className={styles.columns}>
-          <Filters />
+        </div>
+      </SubpageHeading>
+      <Container className={styles.columns}>
+        <Filters />
 
-          <Products products={products} />
-        </Container>
-      </SubpageSection>
-    </ProductsContextProvider>
+        {/* <Products products={products} /> */}
+      </Container>
+    </SubpageSection>
   );
 };
 

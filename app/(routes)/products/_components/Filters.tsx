@@ -1,22 +1,45 @@
 "use client";
 
-import { FC, useReducer } from "react";
+import { FC, useEffect, useReducer, useState } from "react";
 import styles from "./Filters.module.scss";
 import { PiCheckBold } from "react-icons/pi";
-import { useProducts } from "../context/productsContext";
 import { FilterValues } from "../_types/ProductTypes.type";
+import { arrToSearchParams } from "@/app/_lib/arrToSearchParams";
+import { createQueryString } from "@/app/_lib/createQueryString";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 type FiltersProps = object;
 
 const Filters: FC<FiltersProps> = ({}) => {
-  const context = useProducts();
-  const { state: filterState, dispatch } = context!;
+  const [filters, setFilters] = useState<FilterValues[]>([]);
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
+  const router = useRouter();
+
+  function handleClick(type: FilterValues) {
+    if (filters.includes(type)) {
+      setFilters(filters.filter((filter) => filter !== type));
+      return;
+    }
+
+    setFilters((filters) => [...filters, type]);
+  }
+  console.log(filters);
+
+  // update url on state change
+  useEffect(() => {
+    const query = createQueryString(
+      "filter",
+      arrToSearchParams(filters),
+      searchParams
+    );
+
+    router.replace(pathname + "?" + query);
+  }, [searchParams, pathname, router, filters]);
 
   return (
     <div className={styles.filterContainer}>
-      <button onClick={() => dispatch({ type: FilterValues.RESET })}>
-        REMOVE FILTERS
-      </button>
+      <button onClick={() => setFilters([])}>REMOVE FILTERS</button>
 
       <div className={styles.filter}>
         <h4>TYPE</h4>
@@ -26,8 +49,8 @@ const Filters: FC<FiltersProps> = ({}) => {
               type="checkbox"
               name="glass"
               id="glass"
-              checked={filterState.glass}
-              onChange={() => dispatch({ type: FilterValues.GLASS })}
+              checked={filters.includes(FilterValues.GLASS)}
+              onChange={() => handleClick(FilterValues.GLASS)}
             />
             <label htmlFor="glass">
               GLASS
@@ -41,8 +64,8 @@ const Filters: FC<FiltersProps> = ({}) => {
               type="checkbox"
               name="nicotineVapes"
               id="nicotineVapes"
-              checked={filterState.nicotineVapes}
-              onChange={() => dispatch({ type: FilterValues.NVAPE })}
+              checked={filters.includes(FilterValues.NVAPE)}
+              onChange={() => handleClick(FilterValues.NVAPE)}
             />
             <label htmlFor="nicotineVapes">
               NICOTINE VAPES
@@ -56,8 +79,8 @@ const Filters: FC<FiltersProps> = ({}) => {
               type="checkbox"
               name="vapeJuice"
               id="vapeJuice"
-              checked={filterState.vapeJuice}
-              onChange={() => dispatch({ type: FilterValues.VJUICE })}
+              checked={filters.includes(FilterValues.VJUICE)}
+              onChange={() => handleClick(FilterValues.VJUICE)}
             />
             <label htmlFor="vapeJuice">
               VAPE JUICE
@@ -71,8 +94,8 @@ const Filters: FC<FiltersProps> = ({}) => {
               type="checkbox"
               name="nicotinePouches"
               id="nicotinePouches"
-              checked={filterState.nicotinePouches}
-              onChange={() => dispatch({ type: FilterValues.NPOUCH })}
+              checked={filters.includes(FilterValues.NPOUCH)}
+              onChange={() => handleClick(FilterValues.NPOUCH)}
             />
             <label htmlFor="nicotinePouches">
               NICOTINE POUCHES
@@ -86,8 +109,8 @@ const Filters: FC<FiltersProps> = ({}) => {
               type="checkbox"
               name="herbalVapes"
               id="herbalVapes"
-              checked={filterState.herbalVapes}
-              onChange={() => dispatch({ type: FilterValues.HVAPE })}
+              checked={filters.includes(FilterValues.HVAPE)}
+              onChange={() => handleClick(FilterValues.HVAPE)}
             />
             <label htmlFor="herbalVapes">
               HERBAL VAPES
@@ -101,8 +124,8 @@ const Filters: FC<FiltersProps> = ({}) => {
               type="checkbox"
               name="cartBatteries"
               id="cartBatteries"
-              checked={filterState.cartBatteries}
-              onChange={() => dispatch({ type: FilterValues.CBAT })}
+              checked={filters.includes(FilterValues.CBAT)}
+              onChange={() => handleClick(FilterValues.CBAT)}
             />
             <label htmlFor="cartBatteries">
               CART BATTERIES
@@ -116,8 +139,8 @@ const Filters: FC<FiltersProps> = ({}) => {
               type="checkbox"
               name="cigars"
               id="cigars"
-              checked={filterState.cigars}
-              onChange={() => dispatch({ type: FilterValues.CIGARS })}
+              checked={filters.includes(FilterValues.CIGARS)}
+              onChange={() => handleClick(FilterValues.CIGARS)}
             />
             <label htmlFor="cigars">
               CIGARS
@@ -131,8 +154,8 @@ const Filters: FC<FiltersProps> = ({}) => {
               type="checkbox"
               name="tobacco"
               id="tobacco"
-              checked={filterState.tobacco}
-              onChange={() => dispatch({ type: FilterValues.TOBACCO })}
+              checked={filters.includes(FilterValues.TOBACCO)}
+              onChange={() => handleClick(FilterValues.TOBACCO)}
             />
             <label htmlFor="tobacco">
               TOBACCO
@@ -146,8 +169,8 @@ const Filters: FC<FiltersProps> = ({}) => {
               type="checkbox"
               name="kratom"
               id="kratom"
-              checked={filterState.kratom}
-              onChange={() => dispatch({ type: FilterValues.KRATOM })}
+              checked={filters.includes(FilterValues.KRATOM)}
+              onChange={() => handleClick(FilterValues.KRATOM)}
             />
             <label htmlFor="kratom">
               KRATOM/CBD
