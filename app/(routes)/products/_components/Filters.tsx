@@ -25,6 +25,15 @@ const Filters: FC<FiltersProps> = ({}) => {
     setFilters((filters) => [...filters, type]);
   }
 
+  // add existing filters to state on load
+  useEffect(() => {
+    const filterParams = searchParams.get("filter");
+    if (filterParams === null || filterParams.length < 1) return;
+
+    const filters = filterParams.split("%2C");
+    setFilters(filters as FilterValues[]);
+  }, [searchParams]);
+
   // update url on state change
   useEffect(() => {
     const query = createQueryString(

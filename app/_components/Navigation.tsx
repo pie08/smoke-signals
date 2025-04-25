@@ -10,6 +10,7 @@ import {
   PiCaretRightBold,
 } from "react-icons/pi";
 import { usePathname } from "next/navigation";
+import { FilterValues } from "../(routes)/products/_types/ProductTypes.type";
 
 type NavigationProps = object;
 
@@ -34,25 +35,58 @@ const Navigation: FC<NavigationProps> = ({}) => {
 
             {/* dropdown */}
             <Dropdown text="PRODUCTS">
-              <Link className={`${styles.navLink}`} href={"/"}>
+              <Link
+                className={`${styles.navLink}`}
+                href={`/products?filter=${FilterValues.GLASS}`}
+              >
                 GLASS
               </Link>
-              <Link className={`${styles.navLink}`} href={"/"}>
+              <Link
+                className={`${styles.navLink}`}
+                href={`/products?filter=${FilterValues.NVAPE}`}
+              >
                 NICOTINE VAPES
               </Link>
-              <Link className={`${styles.navLink}`} href={"/"}>
+              <Link
+                className={`${styles.navLink}`}
+                href={`/products?filter=${FilterValues.VJUICE}`}
+              >
+                VAPE JUICE
+              </Link>
+              <Link
+                className={`${styles.navLink}`}
+                href={`/products?filter=${FilterValues.NPOUCH}`}
+              >
+                NICOTINE POUCHES
+              </Link>
+              <Link
+                className={`${styles.navLink}`}
+                href={`/products?filter=${FilterValues.HVAPE}`}
+              >
                 HERBAL VAPES
               </Link>
-              <Link className={`${styles.navLink}`} href={"/"}>
+              <Link
+                className={`${styles.navLink}`}
+                href={`/products?filter=${FilterValues.CBAT}`}
+              >
                 CART BATTERIES
               </Link>
-              <Link className={`${styles.navLink}`} href={"/"}>
+              <Link
+                className={`${styles.navLink}`}
+                href={`/products?filter=${FilterValues.CIGARS}`}
+              >
                 CIGARS
               </Link>
-              <Link className={`${styles.navLink}`} href={"/"}>
+              <Link
+                className={`${styles.navLink}`}
+                href={`/products?filter=${FilterValues.TOBACCO}`}
+              >
                 TOBACCO
               </Link>
-              <Link className={`${styles.navLink}`} href={"/"}>
+              <Link
+                className={`${styles.navLink}`}
+                href={`/products?filter=${FilterValues.KRATOM}`}
+              >
                 KRATOM/CBD
               </Link>
             </Dropdown>
