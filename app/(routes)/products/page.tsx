@@ -17,7 +17,8 @@ type pageProps = {
 
 const page: FC<pageProps> = async ({ searchParams }) => {
   const products = await getProductsData();
-  const sortBy = searchParams?.sortBy;
+  const params = await searchParams;
+  const sortBy = params.sortBy;
 
   // todo: add featurted sort
   if (sortBy && sortBy === "az")

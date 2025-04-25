@@ -1,0 +1,37 @@
+[
+  {
+    "imageSrc": "/assets/images/products/cigars/Gurkha Book8.jpg",
+    "name": "gurkha book 8",
+    "type": "cigars"
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/romeo 2.webp",
+    "name": "romeo",
+    "type": "cigars"
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/acid-ciagrs.jpg",
+    "name": "acid cigars",
+    "type": "cigars"
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/deadwood-cigars.jpeg",
+    "name": "deadwood cigars",
+    "type": "cigars"
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/factory smokes.jpeg",
+    "name": "factory smokes",
+    "type": "cigars"
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/tabak.jpg",
+    "name": "tabak cigars",
+    "type": "cigars"
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/undercrown.jpg",
+    "name": "undercrown cigars",
+    "type": "cigars"
+  }
+]
