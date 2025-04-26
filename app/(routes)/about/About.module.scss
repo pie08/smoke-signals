@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 6.4rem;
+
+  @media screen and (max-width: 50em) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .imageContainer {
@@ -11,7 +15,8 @@
   align-items: center;
 
   & img {
+    width: 100%;
     max-width: 50rem;
-    height: 100%;
+    height: auto;
   }
 }
