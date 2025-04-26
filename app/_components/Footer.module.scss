@@ -12,6 +12,10 @@
     flex-direction: column;
     gap: 3.2rem;
     align-items: center;
+
+    @media screen and (max-width: 50em) {
+      align-items: flex-start;
+    }
   }
 }
 
@@ -28,8 +32,15 @@
     }
   }
 
-  &:hover a {
-    opacity: 50%;
+  @media screen and (min-width: 50em) {
+    &:hover a {
+      opacity: 50%;
+    }
+  }
+
+  @media screen and (max-width: 50em) {
+    flex-direction: column;
+    gap: 1.6rem;
   }
 }
 
@@ -51,7 +62,13 @@
     }
   }
 
-  &:hover a {
-    opacity: 50%;
+  @media screen and (min-width: 50em) {
+    &:hover a {
+      opacity: 50%;
+    }
+  }
+
+  @media screen and (max-width: 50em) {
+    gap: 3.2rem;
   }
 }
