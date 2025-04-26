@@ -6,8 +6,6 @@ import Link from "next/link";
 
 type ProductsProps = object;
 
-// ! change href when product page is implemented
-
 const Products: FC<ProductsProps> = ({}) => {
   return (
     <Section>
@@ -16,10 +14,10 @@ const Products: FC<ProductsProps> = ({}) => {
       </Container>
 
       <Container className={styles.products}>
-        <Link href="/products" className={styles.productCard}>
+        <Link href="/products?sortBy=featured" className={styles.productCard}>
           <h2>SHOP FEATURED</h2>
         </Link>
-        <Link href="/products" className={styles.productCard}>
+        <Link href="/products?sortBy=all" className={styles.productCard}>
           <h2>SHOP ALL</h2>
         </Link>
       </Container>

@@ -16,7 +16,6 @@ type ParamSelectProps = {
   }[];
 };
 
-// todo: normalize width
 const ParamSelect: FC<ParamSelectProps> = ({ fieldName, options }) => {
   const [isOpen, setIsOpen] = useState(false);
   // detect when click is outside of component

@@ -8,10 +8,9 @@ import Filters from "./_components/Filters";
 import ProductCard from "./_components/ProductCard";
 import Products from "./_components/Products";
 import { getProductsData } from "./_lib/getProductsData";
-import { SearchParams } from "next/dist/server/request/search-params";
 
 type pageProps = {
-  searchParams: SearchParams;
+  searchParams: Promise<any>;
 };
 
 const page: FC<pageProps> = async ({ searchParams }) => {

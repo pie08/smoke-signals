@@ -7,7 +7,6 @@ import getAllImagePaths from "@/app/_lib/getAllImagePaths";
 
 type pageProps = object;
 
-// ! OPTIMIZE: ADD IMAGE LOADING ANIMATION
 const page: FC<pageProps> = async ({}) => {
   // get all images
   const imagePaths = await getAllImagePaths("/public/assets/images");
