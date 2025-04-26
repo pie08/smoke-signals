@@ -14,10 +14,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   & img {
+    width: 100%;
     max-width: 50rem;
-    height: 100%;
+    height: auto;
   }
 }
