@@ -7,5 +7,12 @@ export function createQueryString(
 ) {
   const params = new URLSearchParams(searchParams.toString());
   params.set(name, value);
+
+  // remove query if no filters
+  if (!params.get(name)) {
+    params.delete(name);
+    return params.toString();
+  }
+
   return params.toString();
 }
