@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React, { FC, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import Container from "./Container";
 import styles from "./Navigation.module.scss";
 import {
@@ -11,16 +11,34 @@ import {
 } from "react-icons/pi";
 import { usePathname } from "next/navigation";
 import { FilterValues } from "../(routes)/products/_types/ProductTypes.type";
+import Button from "./Button";
 
 type NavigationProps = object;
 
 const Navigation: FC<NavigationProps> = ({}) => {
+  // mobile navigation open state
+  const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
+  useEffect(() => setOpen(false), [pathname]);
+
   return (
-    <header className={styles["header"]}>
+    <header className={`${styles["header"]}`}>
       <Container>
-        <nav className={styles["nav"]}>
+        {/* monile nav button */}
+        <button
+          className={`${styles.menuButton}`}
+          onClick={() => setOpen(true)}
+        >
+          <span></span>
+        </button>
+
+        <nav className={`${styles["nav"]} ${open ? styles.open : ""}`}>
+          {/* mobile close button */}
+          <Button className={styles.mobileClose} onClick={() => setOpen(false)}>
+            CLOSE
+          </Button>
+
           <ul className={styles["ul"]}>
             <li className={styles.navItem}>
               <Link
@@ -141,13 +159,20 @@ const Dropdown: FC<DropdownProps> = ({ children, text }) => {
       className={`${styles["dropdownParent"]} ${styles.navItem}`}
       onClick={() => setOpen((curState) => !curState)}
     >
-      <Link className={styles.navLink} href="/products">
+      <a className={styles.navLink}>
         {text}
         <PiCaretRightBold style={{ transition: "all 0.2s" }} />
-      </Link>
+      </a>
 
       <div className={styles.dropdownWrapper}>
-        <ul className={`${open ? "open" : ""} list ${styles.dropdownList}`}>
+        <ul
+          className={`${open ? styles.open : ""} list ${styles.dropdownList}`}
+        >
+          <li className={styles.navItem}>
+            <Link className={`${styles.navLink}`} href={`/products`}>
+              ALL PRODUCTS
+            </Link>
+          </li>
           {React.Children.map(children, (child, i) => (
             <li className={styles.navItem} key={i}>
               {child}
