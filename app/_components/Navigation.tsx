@@ -1,7 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import React, { FC, useCallback, useEffect, useRef, useState } from "react";
+import React, {
+  cloneElement,
+  FC,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import Container from "./Container";
 import styles from "./Navigation.module.scss";
 import {
@@ -54,65 +61,56 @@ const Navigation: FC<NavigationProps> = ({}) => {
             </li>
 
             {/* dropdown */}
-            <Dropdown text="PRODUCTS">
+            <Dropdown text="PRODUCTS" close={close}>
               <Link
-                onClick={close}
                 className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.GLASS}`}
               >
                 GLASS
               </Link>
               <Link
-                onClick={close}
                 className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.NVAPE}`}
               >
                 NICOTINE VAPES
               </Link>
               <Link
-                onClick={close}
                 className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.VJUICE}`}
               >
                 VAPE JUICE
               </Link>
               <Link
-                onClick={close}
                 className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.NPOUCH}`}
               >
                 NICOTINE POUCHES
               </Link>
               <Link
-                onClick={close}
                 className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.HVAPE}`}
               >
                 HERBAL VAPES
               </Link>
               <Link
-                onClick={close}
                 className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.CBAT}`}
               >
                 CART BATTERIES
               </Link>
               <Link
-                onClick={close}
                 className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.CIGARS}`}
               >
                 CIGARS
               </Link>
               <Link
-                onClick={close}
                 className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.TOBACCO}`}
               >
                 TOBACCO
               </Link>
               <Link
-                onClick={close}
                 className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.KRATOM}`}
               >
@@ -163,9 +161,10 @@ const Navigation: FC<NavigationProps> = ({}) => {
 interface DropdownProps {
   children: React.ReactNode;
   text: string;
+  close?: () => void;
 }
 
-const Dropdown: FC<DropdownProps> = ({ children, text }) => {
+const Dropdown: FC<DropdownProps> = ({ children, text, close }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -183,13 +182,20 @@ const Dropdown: FC<DropdownProps> = ({ children, text }) => {
           className={`${open ? styles.open : ""} list ${styles.dropdownList}`}
         >
           <li className={styles.navItem}>
-            <Link className={`${styles.navLink}`} href={`/products`}>
+            <Link
+              className={`${styles.navLink}`}
+              href={`/products`}
+              onClick={close}
+            >
               ALL PRODUCTS
             </Link>
           </li>
           {React.Children.map(children, (child, i) => (
             <li className={styles.navItem} key={i}>
-              {child}
+              {cloneElement(
+                child as React.ReactElement<{ onClick: () => void }>,
+                { onClick: close }
+              )}
             </li>
           ))}
         </ul>
