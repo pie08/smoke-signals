@@ -2,4 +2,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.4rem;
+
+  @media screen and (max-width: 31em) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

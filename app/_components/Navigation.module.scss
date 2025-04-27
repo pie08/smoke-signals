@@ -193,13 +193,13 @@
 .menuButton {
   display: none;
 
-  @media screen and (max-width: 50em) {
-    display: block;
-  }
-
   width: 5.6rem;
   height: 5.6rem;
   background: none;
+
+  @media screen and (max-width: 50em) {
+    display: block;
+  }
 
   & span {
     position: relative;

@@ -15,6 +15,7 @@ type GalleryProps = {
 
 const Gallery: FC<GalleryProps> = ({ imagePaths }) => {
   const parentRef = useRef<HTMLDivElement | null>(null);
+  const width = window.innerWidth;
 
   // dynamically place each image in the shortest column
   useEffect(() => {
@@ -52,8 +53,8 @@ const Gallery: FC<GalleryProps> = ({ imagePaths }) => {
     <div className={styles.gallery} ref={parentRef}>
       <div></div>
       <div></div>
-      <div></div>
-      <div></div>
+      {width > 496 ? <div></div> : null}
+      {width > 496 ? <div></div> : null}
     </div>
   );
 };

@@ -11,7 +11,7 @@
 
 .sort {
   @media screen and (max-width: 50em) {
-    display: none;
+    display: none !important;
   }
 }
 
