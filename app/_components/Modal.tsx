@@ -11,7 +11,7 @@ import React, {
 import { createPortal } from "react-dom";
 import styles from "./Modal.module.scss";
 import Button from "./Button";
-import { useMounted } from "../_hooks/useMounted";
+import { useMounted } from "../_lib/useMounted";
 
 const ModalContext = createContext({
   openId: "",

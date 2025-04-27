@@ -4,6 +4,7 @@ import { FC, useEffect, useRef } from "react";
 import styles from "./Gallery.module.scss";
 import Image from "next/image";
 import { renderToStaticMarkup } from "react-dom/server";
+import { useMounted } from "@/app/_lib/useMounted";
 
 type GalleryProps = {
   imagePaths: {
@@ -15,7 +16,8 @@ type GalleryProps = {
 
 const Gallery: FC<GalleryProps> = ({ imagePaths }) => {
   const parentRef = useRef<HTMLDivElement | null>(null);
-  const width = window.innerWidth;
+  const mounted = useMounted();
+  const width = mounted ? window.innerWidth : 0;
 
   // dynamically place each image in the shortest column
   useEffect(() => {
@@ -47,7 +49,9 @@ const Gallery: FC<GalleryProps> = ({ imagePaths }) => {
       // add html string to innerhtml
       insertElement.innerHTML = insertElement.innerHTML + child;
     });
-  }, [imagePaths]);
+  }, [imagePaths, mounted]);
+
+  if (!mounted) return null;
 
   return (
     <div className={styles.gallery} ref={parentRef}>
