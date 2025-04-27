@@ -1,59 +1,16 @@
-.filterContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-  align-items: flex-start;
-
-  & > button {
-    font-size: 1.2rem;
+.filterSelect {
+  @media screen and (max-width: 50em) {
+    display: none;
   }
 }
 
-.filter {
-  padding: 1.6rem 0;
-  min-width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-  border-top: 2px solid var(--color-primary-600);
-  border-bottom: 2px solid var(--color-primary-600);
+// mobile
+.mobileFilters {
+  display: none;
 
-  & ul {
-    list-style: none;
-    padding-left: 1.6rem;
-
-    & li input {
-      display: none;
-
-      &:checked ~ label span svg {
-        display: block;
-      }
-    }
-
-    & li label {
-      position: relative;
-      padding-left: calc(0.8rem + 1.8rem);
-      cursor: pointer;
-    }
-
-    & li span {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      width: 1.8rem;
-      height: 1.8rem;
-      background-color: var(--color-gray-200);
-      cursor: pointer;
-
-      position: absolute;
-      top: 50%;
-      left: 0;
-      translate: 0 -50%;
-
-      & svg {
-        display: none;
-      }
-    }
+  @media screen and (max-width: 50em) {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
   }
 }

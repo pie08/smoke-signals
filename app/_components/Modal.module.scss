@@ -1,0 +1,23 @@
+.window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  translate: -100% 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-gray-white);
+  z-index: 9999;
+  transition: all 0.2s;
+
+  display: flex;
+  gap: 3.2rem;
+  flex-direction: column;
+
+  & > div {
+    padding: 0 2.4rem;
+  }
+
+  &.open {
+    translate: 0% 0;
+  }
+}
