@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React, { FC, useEffect, useState } from "react";
+import React, { FC, useCallback, useEffect, useRef, useState } from "react";
 import Container from "./Container";
 import styles from "./Navigation.module.scss";
 import {
@@ -18,14 +18,15 @@ type NavigationProps = object;
 const Navigation: FC<NavigationProps> = ({}) => {
   // mobile navigation open state
   const [open, setOpen] = useState(false);
+  const navRef = useRef<HTMLUListElement | null>(null);
   const pathname = usePathname();
 
-  useEffect(() => setOpen(false), [pathname]);
+  const close = useCallback(() => setOpen(false), []);
 
   return (
     <header className={`${styles["header"]}`}>
       <Container>
-        {/* monile nav button */}
+        {/* mobile nav button */}
         <button
           className={`${styles.menuButton}`}
           onClick={() => setOpen(true)}
@@ -39,9 +40,10 @@ const Navigation: FC<NavigationProps> = ({}) => {
             CLOSE
           </Button>
 
-          <ul className={styles["ul"]}>
+          <ul className={styles["ul"]} ref={navRef}>
             <li className={styles.navItem}>
               <Link
+                onClick={close}
                 className={`${styles.navLink} ${
                   pathname === "/" ? styles.active : ""
                 }`}
@@ -54,54 +56,63 @@ const Navigation: FC<NavigationProps> = ({}) => {
             {/* dropdown */}
             <Dropdown text="PRODUCTS">
               <Link
+                onClick={close}
                 className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.GLASS}`}
               >
                 GLASS
               </Link>
               <Link
+                onClick={close}
                 className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.NVAPE}`}
               >
                 NICOTINE VAPES
               </Link>
               <Link
+                onClick={close}
                 className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.VJUICE}`}
               >
                 VAPE JUICE
               </Link>
               <Link
+                onClick={close}
                 className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.NPOUCH}`}
               >
                 NICOTINE POUCHES
               </Link>
               <Link
+                onClick={close}
                 className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.HVAPE}`}
               >
                 HERBAL VAPES
               </Link>
               <Link
+                onClick={close}
                 className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.CBAT}`}
               >
                 CART BATTERIES
               </Link>
               <Link
+                onClick={close}
                 className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.CIGARS}`}
               >
                 CIGARS
               </Link>
               <Link
+                onClick={close}
                 className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.TOBACCO}`}
               >
                 TOBACCO
               </Link>
               <Link
+                onClick={close}
                 className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.KRATOM}`}
               >
@@ -111,6 +122,7 @@ const Navigation: FC<NavigationProps> = ({}) => {
 
             <li className={styles.navItem}>
               <Link
+                onClick={close}
                 className={`${styles.navLink} ${
                   pathname === "/gallery" ? styles.active : ""
                 }`}
@@ -121,6 +133,7 @@ const Navigation: FC<NavigationProps> = ({}) => {
             </li>
             <li className={styles.navItem}>
               <Link
+                onClick={close}
                 className={`${styles.navLink} ${
                   pathname === "/about" ? styles.active : ""
                 }`}
@@ -131,6 +144,7 @@ const Navigation: FC<NavigationProps> = ({}) => {
             </li>
             <li className={styles.navItem}>
               <Link
+                onClick={close}
                 className={`${styles.navLink} ${
                   pathname === "/testimonials" ? styles.active : ""
                 }`}
