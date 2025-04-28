@@ -14,7 +14,7 @@ const Filters: FC<FiltersProps> = ({}) => {
   const mounted = useMounted();
   const width = mounted ? window.innerWidth : 0;
 
-  if (!mounted) return null;
+  if (!mounted) return <div></div>;
 
   return (
     <Modal>
