@@ -3,5 +3,50 @@
     "imageSrc": "/assets/images/products/kratom/wildcraft.jpeg",
     "name": "wildcraft kratom",
     "type": "kratom"
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/True kratom capsules.webp",
+    "name": "true kratom capsules",
+    "type": "kratom"
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/True Kratom powder.webp",
+    "name": "true kratom powder",
+    "type": "kratom"
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/CBD Carts.webp",
+    "name": "cbd carts",
+    "type": "kratom"
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/CBD Lotion.webp",
+    "name": "cbd lotion",
+    "type": "kratom"
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/CBD Flower NH Hemp Co..png",
+    "name": "cbd flower",
+    "type": "kratom"
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/CBD Distillery softgels.webp",
+    "name": "cbd softgels",
+    "type": "kratom"
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/Pet CBD CBD Distillery.webp",
+    "name": "pet cbd",
+    "type": "kratom"
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/CBD distillery tinctures.jpeg",
+    "name": "cbd tinctures",
+    "type": "kratom"
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/CBD Flower  Gold Standard.jpeg",
+    "name": "cbd flower gold standard",
+    "type": "kratom"
   }
 ]
