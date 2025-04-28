@@ -12,7 +12,7 @@ const page: FC<pageProps> = ({}) => {
     <SubpageSection fill>
       <SubpageHeading>TESTIMONIALS</SubpageHeading>
 
-      <Container fill className={styles.testimonials}>
+      <Container className={styles.testimonials}>
         <Testimonial
           text="Great place for all your needs. Friendly staff are very helpful in finding exactly what you you're looking for and the best prices anywhere. Great place to shop."
           author="Deb"

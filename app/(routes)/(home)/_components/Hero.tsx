@@ -15,7 +15,7 @@ const Hero: FC<HeroProps> = ({}) => {
         <p>EVERYTHING YOU NEED FOR A HIGH QUALITY EXPERIENCE</p>
       </Container>
 
-      <Image src={heroImage} alt="Image of smoke signals shop" fill />
+      <Image src={heroImage} alt="Image of smoke signals shop" fill priority />
     </Section>
   );
 };

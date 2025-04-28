@@ -13,7 +13,7 @@ const page: FC<pageProps> = ({}) => {
     <SubpageSection fill>
       <SubpageHeading>ABOUT US</SubpageHeading>
 
-      <Container fill className={styles.about}>
+      <Container className={styles.about}>
         <p>
           Smoke Signals provides the City of Dover and the surrounding seacoast
           with an unparalleled selection of high quality products at competitive
@@ -25,7 +25,7 @@ const page: FC<pageProps> = ({}) => {
         </p>
 
         <div className={styles.imageContainer}>
-          <Image src={aboutImage} alt="Image of smoke signals shop" />
+          <Image src={aboutImage} alt="Image of smoke signals shop" priority />
         </div>
       </Container>
     </SubpageSection>
