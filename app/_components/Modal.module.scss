@@ -13,6 +13,9 @@
   gap: 3.2rem;
   flex-direction: column;
 
+  overflow-y: scroll;
+  padding-bottom: 2.4rem;
+
   & > div {
     padding: 0 2.4rem;
   }
