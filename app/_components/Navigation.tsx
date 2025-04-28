@@ -76,6 +76,12 @@ const Navigation: FC<NavigationProps> = ({}) => {
               </Link>
               <Link
                 className={`${styles.navLink}`}
+                href={`/products?filter=${FilterValues.RVAPE}`}
+              >
+                REFILLABLE VAPES
+              </Link>
+              <Link
+                className={`${styles.navLink}`}
                 href={`/products?filter=${FilterValues.VJUICE}`}
               >
                 VAPE JUICE

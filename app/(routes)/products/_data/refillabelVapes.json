@@ -1,0 +1,67 @@
+[
+  {
+    "imageSrc": "/assets/images/products/refillable-vapes/aegis her.jpeg",
+    "name": "aegis hero",
+    "type": "refillableVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/refillable-vapes/aegis legend 200.jpeg",
+    "name": "aegis legend 200",
+    "type": "refillableVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/refillable-vapes/aegis legend.png",
+    "name": "aegis legend",
+    "type": "refillableVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/refillable-vapes/digimax geekvape.jpeg",
+    "name": "geekvape digimax",
+    "type": "refillableVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/refillable-vapes/Geek vape e100.jpeg",
+    "name": "geekvape e100",
+    "type": "refillableVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/refillable-vapes/geek vape z 200.jpeg",
+    "name": "geekvape z200",
+    "type": "refillableVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/refillable-vapes/Geekvape b100.jpeg",
+    "name": "geekvape b100",
+    "type": "refillableVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/refillable-vapes/geekvape h45.jpeg",
+    "name": "geekvape h45",
+    "type": "refillableVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/refillable-vapes/nord.avif",
+    "name": "nord",
+    "type": "refillableVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/refillable-vapes/sonder q.jpeg",
+    "name": "sonder q",
+    "type": "refillableVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/refillable-vapes/vapresso 4 mini.jpeg",
+    "name": "vapresso 4 mini",
+    "type": "refillableVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/refillable-vapes/vapresso 4 nano.webp",
+    "name": "vapresso 4 nano",
+    "type": "refillableVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/refillable-vapes/wenax q mini.png",
+    "name": "wenax q mini",
+    "type": "refillableVapes"
+  }
+]

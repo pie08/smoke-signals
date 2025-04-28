@@ -87,6 +87,21 @@ const FilterSelect: FC<FiltersProps> = ({ ...props }) => {
           <li>
             <input
               type="checkbox"
+              name="refillableVapes"
+              id="refillableVapes"
+              checked={filters.includes(FilterValues.RVAPE)}
+              onChange={() => handleClick(FilterValues.RVAPE)}
+            />
+            <label htmlFor="refillableVapes">
+              REFILLABLE VAPES
+              <span>
+                <PiCheckBold />
+              </span>
+            </label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
               name="vapeJuice"
               id="vapeJuice"
               checked={filters.includes(FilterValues.VJUICE)}
