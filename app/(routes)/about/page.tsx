@@ -5,6 +5,12 @@ import Image from "next/image";
 import aboutImage from "../../../public/assets/images/shop/SMOKESIGNALS-39.jpg";
 import styles from "./About.module.scss";
 import Container from "@/app/_components/Container";
+import { Metadata } from "next";
+
+// add metadata
+export const metadata: Metadata = {
+  title: "ABOUT",
+};
 
 type pageProps = object;
 

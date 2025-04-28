@@ -4,6 +4,12 @@ import SubpageSection from "@/app/_components/subpage/SubpageSection";
 import { FC } from "react";
 import Gallery from "./Gallery";
 import getAllImagePaths from "@/app/_lib/getAllImagePaths";
+import { Metadata } from "next";
+
+// add metadata
+export const metadata: Metadata = {
+  title: "GALLERY",
+};
 
 type pageProps = object;
 

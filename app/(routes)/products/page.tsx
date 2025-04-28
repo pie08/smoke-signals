@@ -9,6 +9,12 @@ import Products from "./_components/Products";
 import { getProductsData } from "./_lib/getProductsData";
 import Filters from "./_components/Filters";
 import Sort from "./_components/Sort";
+import { Metadata } from "next";
+
+// add metadata
+export const metadata: Metadata = {
+  title: "PRODUCTS",
+};
 
 type pageProps = {
   searchParams: Promise<any>;

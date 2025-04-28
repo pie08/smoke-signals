@@ -22,7 +22,10 @@ const bebasNeue = Bebas_Neue({
 
 // add metadata
 export const metadata: Metadata = {
-  title: "Smoke Signals",
+  title: {
+    template: "%s | SMOKE SIGNALS",
+    default: "SMOKE SIGNALS",
+  },
   description: "Smoke shop in Dover, NH",
 };
 

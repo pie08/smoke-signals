@@ -4,6 +4,12 @@ import { FC } from "react";
 import styles from "./Testimonials.module.scss";
 import Container from "@/app/_components/Container";
 import Testimonial from "@/app/_components/Testimonial";
+import { Metadata } from "next";
+
+// add metadata
+export const metadata: Metadata = {
+  title: "TESTIMONIALS",
+};
 
 type pageProps = object;
 
