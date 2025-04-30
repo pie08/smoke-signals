@@ -1,12 +1,12 @@
 import Container from "@/app/_components/Container";
 import SubpageHeading from "@/app/_components/subpage/SubpageHeading";
 import SubpageSection from "@/app/_components/subpage/SubpageSection";
-import { FC } from "react";
+import { FC, useState } from "react";
 import styles from "./Page.module.scss";
 import ParamSelect from "@/app/_components/ParamSelect";
 import ProductCard from "./_components/ProductCard";
 import Products from "./_components/Products";
-import { getProductsData } from "./_lib/getProductsData";
+import { getProducts } from "./_lib/getProducts";
 import Filters from "./_components/Filters";
 import Sort from "./_components/Sort";
 import { Metadata } from "next";
@@ -21,26 +21,12 @@ type pageProps = {
 };
 
 const page: FC<pageProps> = async ({ searchParams }) => {
-  const products = await getProductsData();
   const params = await searchParams;
-  const sortBy = params.sortBy;
-
-  // todo: add featurted sort
-  if (sortBy && sortBy === "az")
-    products.sort((a, b) => {
-      if (a.name < b.name) {
-        return -1;
-      }
-      return 0;
-    });
-
-  if (sortBy && sortBy === "za")
-    products.sort((a, b) => {
-      if (a.name > b.name) {
-        return -1;
-      }
-      return 0;
-    });
+  const sortBy = params.sortBy || "all";
+  const page = Number(params.page) || 1;
+  const filters = params.filter || null;
+  // get products
+  const products = await getProducts({ sortBy, page, filters });
 
   return (
     <SubpageSection fill>
@@ -51,6 +37,7 @@ const page: FC<pageProps> = async ({ searchParams }) => {
           <Sort className={styles.sort} />
         </div>
       </SubpageHeading>
+
       <Container className={styles.columns}>
         <Filters />
 

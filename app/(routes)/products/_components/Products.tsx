@@ -11,21 +11,10 @@ type ProductsProps = {
 };
 
 const Products: FC<ProductsProps> = ({ products }) => {
-  const filters = useSearchParams().get("filter");
-
-  // filter products
-  const filteredProducts = products.filter(({ type }) => {
-    // if no filter show all
-    if (filters === null || filters.length === 0) return true;
-
-    // filter products
-    return filters.includes(type);
-  });
-
   return (
     <div className={styles.products}>
       {/* display prducts */}
-      {filteredProducts.map((product, i) => (
+      {products.map((product, i) => (
         <ProductCard imageSrc={product.imageSrc} name={product.name} key={i} />
       ))}
     </div>
