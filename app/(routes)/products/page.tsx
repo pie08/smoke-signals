@@ -46,7 +46,7 @@ const page: FC<pageProps> = async ({ searchParams }) => {
       <Container className={styles.columns}>
         <Filters />
         <Products products={paginatedProducts} />
-        <Pagination page={page} maxPages={10} />
+        <Pagination page={page} maxPages={maxPages} />
       </Container>
     </SubpageSection>
   );
