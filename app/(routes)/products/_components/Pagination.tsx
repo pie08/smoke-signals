@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FC, HTMLAttributes } from "react";
+import React, { FC, HTMLAttributes, useEffect, useMemo } from "react";
 import styles from "./Pagination.module.scss";
 import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
 import Link from "next/link";
@@ -26,15 +26,21 @@ const Pagination: FC<PaginationProps> = ({ page, maxPages }) => {
   const pathname = usePathname();
   const currentPage = Number(params.get("page")) || 1;
 
-  const collapseFront = currentPage > 3;
-  const collapseBack = currentPage < maxPages - 3;
-
   function handleClick(page: number) {
     if (page < 1 || page > maxPages) return;
 
     const query = createQueryString("page", page, params);
     router.replace(pathname + "?" + query);
   }
+
+  // delete page from search params if page > maxPages
+  if (page > maxPages) {
+    const query = new URLSearchParams(params);
+    query.delete("page");
+    router.replace(pathname + "?" + query.toString());
+  }
+
+  if (maxPages < 2) return null;
 
   return (
     <div className={styles.pagination}>
@@ -50,41 +56,15 @@ const Pagination: FC<PaginationProps> = ({ page, maxPages }) => {
         1
       </PaginationButton>
 
-      {!collapseFront &&
-        Array.from({ length: 3 }).map((_, i) => (
-          <PaginationButton
-            page={currentPage}
-            onClick={() => handleClick(i + 2)}
-            key={i}
-          >
-            {i + 2}
-          </PaginationButton>
-        ))}
-      {collapseFront && <p className={styles.paginationPlaceholder}>...</p>}
-
-      {collapseBack &&
-        collapseFront &&
-        Array.from({ length: 3 }).map((_, i) => (
-          <PaginationButton
-            page={currentPage}
-            onClick={() => handleClick(page - 1 + i)}
-            key={i}
-          >
-            {page - 1 + i}
-          </PaginationButton>
-        ))}
-
-      {collapseBack && <p className={styles.paginationPlaceholder}>...</p>}
-      {!collapseBack &&
-        Array.from({ length: 3 }).map((_, i) => (
-          <PaginationButton
-            page={currentPage}
-            onClick={() => handleClick(maxPages - 3 + i)}
-            key={i}
-          >
-            {maxPages - 3 + i}
-          </PaginationButton>
-        ))}
+      {Array.from({ length: maxPages - 2 }).map((_, i) => (
+        <PaginationButton
+          page={currentPage}
+          key={i}
+          onClick={() => handleClick(i + 2)}
+        >
+          {i + 2}
+        </PaginationButton>
+      ))}
 
       <PaginationButton
         page={currentPage}
