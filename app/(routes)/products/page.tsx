@@ -10,6 +10,9 @@ import { getProducts } from "./_lib/getProducts";
 import Filters from "./_components/Filters";
 import Sort from "./_components/Sort";
 import { Metadata } from "next";
+import Pagination from "./_components/Pagination";
+import { PRODUCTS_PAGE_SIZE } from "@/app/constants";
+import paginateProducts from "./_lib/paginateProducts";
 
 // add metadata
 export const metadata: Metadata = {
@@ -26,7 +29,9 @@ const page: FC<pageProps> = async ({ searchParams }) => {
   const page = Number(params.page) || 1;
   const filters = params.filter || null;
   // get products
-  const products = await getProducts({ sortBy, page, filters });
+  const products = await getProducts({ sortBy, filters });
+  const paginatedProducts = paginateProducts(products, page);
+  const maxPages = Math.ceil(products.length / PRODUCTS_PAGE_SIZE);
 
   return (
     <SubpageSection fill>
@@ -40,8 +45,8 @@ const page: FC<pageProps> = async ({ searchParams }) => {
 
       <Container className={styles.columns}>
         <Filters />
-
-        <Products products={products} />
+        <Products products={paginatedProducts} />
+        <Pagination page={page} maxPages={10} />
       </Container>
     </SubpageSection>
   );

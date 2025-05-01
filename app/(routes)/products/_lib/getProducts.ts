@@ -2,11 +2,12 @@ import { combineJsonArrays } from "@/app/_lib/combineJsonArrays";
 import { ProductData } from "../_types/ProductTypes.type";
 import { readdir } from "fs/promises";
 import { PRODUCTS_PAGE_SIZE } from "@/app/constants";
+import paginateProducts from "./paginateProducts";
 
 interface options {
   sortBy: "all" | "featured" | "az" | "za";
   filters: string;
-  page: number;
+  page?: number;
 }
 
 export async function getProducts({ sortBy, filters, page }: options) {
@@ -43,8 +44,9 @@ export async function getProducts({ sortBy, filters, page }: options) {
     });
 
   // PAGINATION
-  const increase = (page - 1) * PRODUCTS_PAGE_SIZE;
-  data = data.slice(0 + increase, PRODUCTS_PAGE_SIZE + increase);
+  if (page) {
+    data = paginateProducts(data, page);
+  }
 
   return data;
 }
