@@ -1,0 +1,57 @@
+[
+  {
+    "imageSrc": "/assets/images/products/tobacco/American Club.jpeg",
+    "name": "american club",
+    "type": "tobacco"
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/american spirit.jpeg",
+    "name": "american spirit",
+    "type": "tobacco"
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/cocnara coals.jpeg",
+    "name": "cocnara coals",
+    "type": "tobacco"
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/Gambler tobacco.jpeg",
+    "name": "gambler tobacco",
+    "type": "tobacco"
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/hookah 2.jpeg",
+    "name": "hookah",
+    "type": "tobacco"
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/republic brands.jpeg",
+    "name": "republic brands",
+    "type": "tobacco"
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/starbuzz.jpeg",
+    "name": "starbuzz",
+    "type": "tobacco"
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/stokebye 2.webp",
+    "name": "stokebye",
+    "type": "tobacco"
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/the Good stuff.jpeg",
+    "name": "the good stuff",
+    "type": "tobacco"
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/three kings hookah coal.jpeg",
+    "name": "three kings hookah coal",
+    "type": "tobacco"
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/ya layl shisha.jpeg",
+    "name": "ya layl shisha",
+    "type": "tobacco"
+  }
+]
