@@ -20,7 +20,7 @@
     "type": "refillableVapes"
   },
   {
-    "imageSrc": "/assets/images/products/refillable-vapes/Geek vape e100.jpeg",
+    "imageSrc": "/assets/images/products/refillable-vapes/geekvape e100.jpeg",
     "name": "geekvape e100",
     "type": "refillableVapes"
   },
@@ -55,13 +55,23 @@
     "type": "refillableVapes"
   },
   {
-    "imageSrc": "/assets/images/products/refillable-vapes/vapresso 4 nano.webp",
-    "name": "vapresso 4 nano",
+    "imageSrc": "/assets/images/products/refillable-vapes/vapresso nano 4.jpeg",
+    "name": "vapresso nano 4",
     "type": "refillableVapes"
   },
   {
-    "imageSrc": "/assets/images/products/refillable-vapes/wenax q mini.png",
+    "imageSrc": "/assets/images/products/refillable-vapes/geekvape wenax q mini.jpeg",
     "name": "wenax q mini",
+    "type": "refillableVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/refillable-vapes/geekvape wenax q.jpeg",
+    "name": "wenax q",
+    "type": "refillableVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/refillable-vapes/smok nord c.jpeg",
+    "name": "smok nord c",
     "type": "refillableVapes"
   }
 ]
