@@ -53,5 +53,25 @@
     "imageSrc": "/assets/images/products/disposable-vapes/Raz Punch edition.jpeg",
     "name": "raz punch edition",
     "type": "nicotineVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/disposable-vapes/viho trx 50k.jpeg",
+    "name": "viho trx 50k",
+    "type": "nicotineVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/disposable-vapes/geekbar minz.jpeg",
+    "name": "geekbar minz",
+    "type": "nicotineVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/disposable-vapes/Gook bar pulse.jpeg",
+    "name": "gook bar pulse",
+    "type": "nicotineVapes"
+  },
+  {
+    "imageSrc": "/assets/images/products/disposable-vapes/Lost mary.jpeg",
+    "name": "lost mary",
+    "type": "nicotineVapes"
   }
 ]
