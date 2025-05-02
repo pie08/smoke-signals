@@ -23,5 +23,10 @@
     "imageSrc": "/assets/images/products/nicotine-pouches/zimo pouch.jpeg",
     "name": "zimo",
     "type": "nicotinePouches"
+  },
+  {
+    "imageSrc": "/assets/images/products/nicotine-pouches/zyn nicotene pouches.jpeg",
+    "name": "zyn",
+    "type": "nicotinePouches"
   }
 ]
