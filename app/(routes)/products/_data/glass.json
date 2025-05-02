@@ -288,5 +288,20 @@
     "imageSrc": "/assets/images/products/glass/Twisted sisters soft glass waterpipes.jpeg",
     "name": "twisted soft glass waterpipes",
     "type": "glass"
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/empire 19.webp",
+    "name": "empire 19",
+    "type": "glass"
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/empire 15.webp",
+    "name": "empire 15",
+    "type": "glass"
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/empire 14.webp",
+    "name": "empire 14",
+    "type": "glass"
   }
 ]
