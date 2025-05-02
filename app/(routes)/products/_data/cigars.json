@@ -10,7 +10,7 @@
     "type": "cigars"
   },
   {
-    "imageSrc": "/assets/images/products/cigars/acid-ciagrs.jpg",
+    "imageSrc": "/assets/images/products/cigars/acid 2.jpeg",
     "name": "acid cigars",
     "type": "cigars"
   },
@@ -30,8 +30,13 @@
     "type": "cigars"
   },
   {
-    "imageSrc": "/assets/images/products/cigars/undercrown.jpg",
+    "imageSrc": "/assets/images/products/cigars/undercrown.jpeg",
     "name": "undercrown cigars",
+    "type": "cigars"
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/Liga privada cigars.jpeg",
+    "name": "liga privada cigars",
     "type": "cigars"
   }
 ]
