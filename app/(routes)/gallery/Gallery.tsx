@@ -26,6 +26,7 @@ const Gallery: FC<GalleryProps> = ({ imagePaths }) => {
 
   if (!mounted) return null;
 
+  // todo: make pages work work, maybe pass images as children into another component
   return (
     <div className={styles.galleryWrapper}>
       <div className={styles.gallery} ref={parentRef}>
