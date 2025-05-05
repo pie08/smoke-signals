@@ -3,7 +3,7 @@ import styles from "./Button.module.scss";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  btnStyle?: "cta" | "gray";
+  btnStyle?: "cta" | "gray" | "underline";
   className?: string;
   [x: string]: any;
 }

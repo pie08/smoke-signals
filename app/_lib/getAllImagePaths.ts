@@ -2,6 +2,12 @@ import { readdir, stat } from "fs/promises";
 import { glob } from "glob";
 import { imageSizeFromFile } from "image-size/fromFile";
 
+export interface ImageData {
+  path: string;
+  width: number;
+  height: number;
+}
+
 async function addAllFilesRecursive(rootPath: string, pathArr: string[] = []) {
   try {
     // get all files

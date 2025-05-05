@@ -1,3 +1,10 @@
+.galleryWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  align-items: center;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
