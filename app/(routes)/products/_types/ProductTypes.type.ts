@@ -1,5 +1,3 @@
-import { ActionDispatch } from "react";
-
 export enum FilterValues {
   GLASS = "glass",
   NVAPE = "nicotineVapes",

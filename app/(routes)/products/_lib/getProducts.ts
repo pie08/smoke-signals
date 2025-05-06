@@ -1,8 +1,9 @@
 import { combineJsonArrays } from "@/app/_lib/combineJsonArrays";
-import { ProductData } from "../_types/ProductTypes.type";
+import { FilterValues, ProductData } from "../_types/ProductTypes.type";
 import { readdir } from "fs/promises";
 import { PRODUCTS_PAGE_SIZE } from "@/app/constants";
 import paginateProducts from "./paginateProducts";
+import generateProductsFromDir from "./generateProductsFromDir";
 
 interface options {
   sortBy: "all" | "featured" | "az" | "za";
@@ -10,12 +11,20 @@ interface options {
   page?: number;
 }
 
+// get all images dynamically, image file names will be the product names, every file in the directory will become its own product
 export async function getProducts({ sortBy, filters, page }: options) {
-  // get json files
-  const dataPath = process.cwd() + "/app/(routes)/products/_data";
-  const files = (await readdir(dataPath)).map((path) => dataPath + "/" + path);
-  // extract json data
-  let data = await combineJsonArrays<ProductData>(files);
+  await generateProductsFromDir(
+    process.cwd() + "/public/assets/images/products/vapeJuice"
+  );
+
+  const productDirectories = (
+    await readdir(process.cwd() + "/public/assets/images/products")
+  ).map((path) => process.cwd() + "/public/assets/images/products/" + path);
+  let data: ProductData[] = [];
+  for (const categoryPath of productDirectories) {
+    const categoryData = await generateProductsFromDir(categoryPath);
+    data = [...data, ...categoryData];
+  }
 
   // FILTER
   data = data.filter(({ type }) => {

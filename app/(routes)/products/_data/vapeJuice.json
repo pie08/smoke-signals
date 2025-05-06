@@ -15,7 +15,7 @@
     "type": "vapeJuice"
   },
   {
-    "imageSrc": "/assets/images/products/vape-juice/Jam monster ejuice.jpeg",
+    "imageSrc": "/assets/images/products/vape-juice/jam monster.png",
     "name": "jam monster",
     "type": "vapeJuice"
   },
@@ -25,7 +25,7 @@
     "type": "vapeJuice"
   },
   {
-    "imageSrc": "/assets/images/products/vape-juice/Naked vape juice.jpeg",
+    "imageSrc": "/assets/images/products/vape-juice/naked logo.png",
     "name": "naked vape juice",
     "type": "vapeJuice"
   },
@@ -35,12 +35,12 @@
     "type": "vapeJuice"
   },
   {
-    "imageSrc": "/assets/images/products/vape-juice/pacha mama ejuice.jpeg",
+    "imageSrc": "/assets/images/products/vape-juice/pacha mama logo.jpeg",
     "name": "pacha mama ejuice",
     "type": "vapeJuice"
   },
   {
-    "imageSrc": "/assets/images/products/vape-juice/pod juice.jpeg",
+    "imageSrc": "/assets/images/products/vape-juice/pod juice.png",
     "name": "pod ejuice",
     "type": "vapeJuice"
   },
@@ -55,17 +55,17 @@
     "type": "vapeJuice"
   },
   {
-    "imageSrc": "/assets/images/products/vape-juice/red's e-juice.jpeg",
+    "imageSrc": "/assets/images/products/vape-juice/reds vape juice.webp",
     "name": "red's ejuice",
     "type": "vapeJuice"
   },
   {
-    "imageSrc": "/assets/images/products/vape-juice/sad boy salts.jpeg",
+    "imageSrc": "/assets/images/products/vape-juice/sad boy.png",
     "name": "sad boy salts",
     "type": "vapeJuice"
   },
   {
-    "imageSrc": "/assets/images/products/vape-juice/Salt Bae eliquid.png",
+    "imageSrc": "/assets/images/products/vape-juice/salt bae logo.jpeg",
     "name": "salt bae eliquid",
     "type": "vapeJuice"
   },
@@ -75,13 +75,123 @@
     "type": "vapeJuice"
   },
   {
-    "imageSrc": "/assets/images/products/vape-juice/twist e liquid.jpeg",
+    "imageSrc": "/assets/images/products/vape-juice/twist.png",
     "name": "twist e liquid",
     "type": "vapeJuice"
   },
   {
-    "imageSrc": "/assets/images/products/vape-juice/vapetasia.jpeg",
+    "imageSrc": "/assets/images/products/vape-juice/vapetasia logo.jpeg",
     "name": "vapetasia",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/bams cannoli.png",
+    "name": "bams cannoli",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/beard vape co.jpeg",
+    "name": "beard vape co",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/candy king.jpeg",
+    "name": "candy king",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/cannoli be one.png",
+    "name": "cannoli be one",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/deep cuts.png",
+    "name": "deep cuts",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/french dude.jpeg",
+    "name": "french dude",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/frozen fruit monster.png",
+    "name": "frozen fruit monster",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/graham slam.jpeg",
+    "name": "graham slam",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/innevape.png",
+    "name": "innevape",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/jimmy the juiceman.jpeg",
+    "name": "jimmy the juiceman",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/keep it 100.png",
+    "name": "keep it 100",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/micro brew vapor.jpeg",
+    "name": "microbrew vapor",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/noms.jpeg",
+    "name": "noms",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/one up.jpeg",
+    "name": "one up",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/primus .png",
+    "name": "primus",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/propoganda.png",
+    "name": "propoganda",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/pulse liq.jpeg",
+    "name": "pulse liquid",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/slapple.jpeg",
+    "name": "slapple",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/suicide bunny logo.jpeg",
+    "name": "suicide bunny",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/the milk.jpeg",
+    "name": "the milk",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/the one.jpeg",
+    "name": "the one",
+    "type": "vapeJuice"
+  },
+  {
+    "imageSrc": "/assets/images/products/vape-juice/vape pink.png",
+    "name": "vape pink",
     "type": "vapeJuice"
   }
 ]
