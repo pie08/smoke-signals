@@ -1,10 +1,8 @@
 import Container from "@/app/_components/Container";
 import SubpageHeading from "@/app/_components/subpage/SubpageHeading";
 import SubpageSection from "@/app/_components/subpage/SubpageSection";
-import { FC, useState } from "react";
+import { FC } from "react";
 import styles from "./Page.module.scss";
-import ParamSelect from "@/app/_components/ParamSelect";
-import ProductCard from "./_components/ProductCard";
 import Products from "./_components/Products";
 import { getProducts } from "./_lib/getProducts";
 import Filters from "./_components/Filters";
@@ -32,7 +30,6 @@ const page: FC<pageProps> = async ({ searchParams }) => {
   const products = await getProducts({ sortBy, filters });
   const paginatedProducts = paginateProducts(products, page);
   const maxPages = Math.ceil(products.length / PRODUCTS_PAGE_SIZE);
-  console.log(products);
 
   return (
     <SubpageSection fill>

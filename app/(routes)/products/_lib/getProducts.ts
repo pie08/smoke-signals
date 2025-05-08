@@ -4,6 +4,7 @@ import { readdir } from "fs/promises";
 import { PRODUCTS_PAGE_SIZE } from "@/app/constants";
 import paginateProducts from "./paginateProducts";
 import generateProductsFromDir from "./generateProductsFromDir";
+import camelToNormal from "./camelToNormal";
 
 interface options {
   sortBy: "all" | "featured" | "az" | "za";
@@ -13,10 +14,6 @@ interface options {
 
 // get all images dynamically, image file names will be the product names, every file in the directory will become its own product
 export async function getProducts({ sortBy, filters, page }: options) {
-  await generateProductsFromDir(
-    process.cwd() + "/public/assets/images/products/vapeJuice"
-  );
-
   const productDirectories = (
     await readdir(process.cwd() + "/public/assets/images/products")
   ).map((path) => process.cwd() + "/public/assets/images/products/" + path);
