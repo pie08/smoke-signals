@@ -12,17 +12,9 @@ interface GalleryProps {
 }
 
 const Gallery: FC<GalleryProps> = ({ imagePaths }) => {
-  const [page, setPage] = useState(1);
-  const maxPage = Math.ceil(imagePaths.length / GALLERY_PAGE_SIZE);
-  const images = imagePaths.slice(0, GALLERY_PAGE_SIZE * page);
   // load images
-  const { parentRef, mounted } = useLoadImage(images);
+  const { parentRef, mounted } = useLoadImage(imagePaths);
   const width = mounted ? window.innerWidth : 0;
-
-  function handleClick() {
-    if (page + 1 > maxPage) return;
-    setPage(Number(page) + 1);
-  }
 
   if (!mounted) return null;
 
@@ -35,9 +27,6 @@ const Gallery: FC<GalleryProps> = ({ imagePaths }) => {
         {width > 496 ? <div></div> : null}
         {width > 496 ? <div></div> : null}
       </div>
-      <Button btnStyle="underline" onClick={handleClick}>
-        LOAD MORE
-      </Button>
     </div>
   );
 };
