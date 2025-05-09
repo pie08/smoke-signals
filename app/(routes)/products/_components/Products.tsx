@@ -15,7 +15,11 @@ const Products: FC<ProductsProps> = ({ products }) => {
     <div className={styles.products}>
       {/* display prducts */}
       {products.map((product, i) => (
-        <ProductCard imageSrc={product.imageSrc} name={product.name} key={i} />
+        <ProductCard
+          imageSrc={product.imageSrc}
+          name={product.name}
+          key={product.name}
+        />
       ))}
     </div>
   );
