@@ -12,7 +12,7 @@ export interface ImageData {
 async function addAllFilesRecursive(rootPath: string, pathArr: string[] = []) {
   try {
     const exists = existsSync(rootPath);
-    console.log(exists);
+    console.error(exists);
     // get all files
     const files = await readdir(rootPath);
 
