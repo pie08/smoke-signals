@@ -1,3 +1,4 @@
+import { existsSync } from "fs";
 import { readdir, stat } from "fs/promises";
 import { glob } from "glob";
 import { imageSizeFromFile } from "image-size/fromFile";
@@ -10,6 +11,8 @@ export interface ImageData {
 
 async function addAllFilesRecursive(rootPath: string, pathArr: string[] = []) {
   try {
+    const exists = existsSync(rootPath);
+    console.log(exists);
     // get all files
     const files = await readdir(rootPath);
 
