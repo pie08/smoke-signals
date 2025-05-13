@@ -6,6 +6,7 @@ import paginateProducts from "./paginateProducts";
 import generateProductsFromDir from "./generateProductsFromDir";
 import camelToNormal from "./camelToNormal";
 import { existsSync } from "fs";
+import path from "path";
 
 interface options {
   sortBy: "all" | "featured" | "az" | "za";
@@ -16,9 +17,7 @@ interface options {
 // get all images dynamically, image file names will be the product names, every file in the directory will become its own product
 export async function getProducts({ sortBy, filters, page }: options) {
   // ! DELETE
-  const exists = await readdir(
-    process.cwd() + "/public/assets/images/products"
-  );
+  const exists = await readdir(path.join(process.cwd(), "public"));
   if (exists) throw new Error(exists.join(" | "));
   const productDirectories = (
     await readdir(process.cwd() + "/public/assets/images/products")
