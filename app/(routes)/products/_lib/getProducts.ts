@@ -1,10 +1,8 @@
-import { combineJsonArrays } from "@/app/_lib/combineJsonArrays";
-import { FilterValues, ProductData } from "../_types/ProductTypes.type";
 import { readdir } from "fs/promises";
-import { PRODUCTS_PAGE_SIZE } from "@/app/constants";
-import paginateProducts from "./paginateProducts";
-import generateProductsFromDir from "./generateProductsFromDir";
 import path from "path";
+import { ProductData } from "../_types/ProductTypes.type";
+import generateProductsFromDir from "./generateProductsFromDir";
+import paginateProducts from "./paginateProducts";
 
 interface options {
   sortBy: "all" | "featured" | "az" | "za";
@@ -14,13 +12,17 @@ interface options {
 
 // get all images dynamically, image file names will be the product names, every file in the directory will become its own product
 export async function getProducts({ sortBy, filters, page }: options) {
+  // path to products
   const productsPath = path.resolve(
     path.join(process.cwd(), "public/assets/images/products")
   );
 
+  // read all files in products directory and append file name to productsPath
   const productDirectories = (await readdir(productsPath)).map(
     (productFileName) => path.join(productsPath, productFileName)
   );
+
+  // create product data
   let data: ProductData[] = [];
   for (const categoryPath of productDirectories) {
     const categoryData = await generateProductsFromDir(categoryPath);

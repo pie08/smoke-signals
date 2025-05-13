@@ -2,6 +2,7 @@ import { existsSync } from "fs";
 import { readdir, stat } from "fs/promises";
 import { glob } from "glob";
 import { imageSizeFromFile } from "image-size/fromFile";
+import path from "path";
 
 export interface ImageData {
   path: string;
@@ -9,26 +10,27 @@ export interface ImageData {
   height: number;
 }
 
+//
 async function addAllFilesRecursive(rootPath: string, pathArr: string[] = []) {
   try {
     // get all files
     const files = await readdir(rootPath);
 
     // add all non directories to arr
-    for (const path of files) {
-      const stats = await stat(rootPath + "/" + path);
+    for (const fileName of files) {
+      const stats = await stat(path.join(rootPath, fileName));
 
       if (stats.isFile()) {
-        pathArr.push(rootPath + "/" + path);
+        pathArr.push(path.join(rootPath, fileName));
       }
     }
 
-    // recursively call this with cild directory
-    for (const path of files) {
-      const stats = await stat(rootPath + "/" + path);
+    // recursively call this with child directories
+    for (const childDir of files) {
+      const stats = await stat(path.join(rootPath, childDir));
 
       if (stats.isDirectory()) {
-        await addAllFilesRecursive(rootPath + "/" + path, pathArr);
+        await addAllFilesRecursive(path.join(rootPath, childDir), pathArr);
       }
     }
 
@@ -40,14 +42,19 @@ async function addAllFilesRecursive(rootPath: string, pathArr: string[] = []) {
 }
 
 async function getAllImagePaths(rootDir: string) {
-  const parentPath = process.cwd() + rootDir;
+  // get path to directory
+  const parentPath = path.resolve(path.join(process.cwd(), rootDir));
 
+  // get all file paths in directory
   const files = await addAllFilesRecursive(parentPath);
 
+  // add data to files
   const filesWithData = files.map(async (path) => {
     try {
+      // dont include hidden files
       if (path.split("/").at(-1)![0] === ".") return;
 
+      // add image data
       const { width, height } = await imageSizeFromFile(path);
       return {
         path: path.split("public")[1].replaceAll("\\", "/"),

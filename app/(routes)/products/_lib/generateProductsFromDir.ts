@@ -1,13 +1,17 @@
 import { readdir } from "fs/promises";
 import { ProductData } from "../_types/ProductTypes.type";
 
+// takes in a folder from the products directory and creates an object for each product
 export default async function generateProductsFromDir(
-  directory: string,
+  productsPath: string,
   suffixString?: string
 ) {
   try {
-    const category = directory.split("/").pop() || "";
-    const files = await readdir(directory);
+    // get product category from path
+    const category = productsPath.split("/").pop() || "";
+    // get files
+    const files = await readdir(productsPath);
+
     // add data
     return files.map((name) => {
       return {
