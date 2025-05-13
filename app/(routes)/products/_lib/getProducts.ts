@@ -4,8 +4,6 @@ import { readdir } from "fs/promises";
 import { PRODUCTS_PAGE_SIZE } from "@/app/constants";
 import paginateProducts from "./paginateProducts";
 import generateProductsFromDir from "./generateProductsFromDir";
-import camelToNormal from "./camelToNormal";
-import { existsSync } from "fs";
 import path from "path";
 
 interface options {
@@ -16,11 +14,9 @@ interface options {
 
 // get all images dynamically, image file names will be the product names, every file in the directory will become its own product
 export async function getProducts({ sortBy, filters, page }: options) {
-  const productsPath = path.join(
-    process.cwd(),
-    "public/assets/imaged/products"
+  const productsPath = path.resolve(
+    path.join(process.cwd(), "public/assets/images/products")
   );
-  console.log(productsPath);
 
   const productDirectories = (await readdir(productsPath)).map(
     (productFileName) => path.join(productsPath, productFileName)
