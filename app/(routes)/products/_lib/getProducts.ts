@@ -16,12 +16,15 @@ interface options {
 
 // get all images dynamically, image file names will be the product names, every file in the directory will become its own product
 export async function getProducts({ sortBy, filters, page }: options) {
-  // ! DELETE
-  const exists = await readdir(path.join(process.cwd(), "public"));
-  if (exists) throw new Error(exists.join(" | "));
-  const productDirectories = (
-    await readdir(process.cwd() + "/public/assets/images/products")
-  ).map((path) => process.cwd() + "/public/assets/images/products/" + path);
+  const productsPath = path.join(
+    process.cwd(),
+    "public/assets/imaged/products"
+  );
+  console.log(productsPath);
+
+  const productDirectories = (await readdir(productsPath)).map(
+    (productFileName) => path.join(productsPath, productFileName)
+  );
   let data: ProductData[] = [];
   for (const categoryPath of productDirectories) {
     const categoryData = await generateProductsFromDir(categoryPath);
