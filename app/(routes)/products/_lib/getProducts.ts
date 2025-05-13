@@ -16,8 +16,10 @@ interface options {
 // get all images dynamically, image file names will be the product names, every file in the directory will become its own product
 export async function getProducts({ sortBy, filters, page }: options) {
   // ! DELETE
-  const exists = existsSync(process.cwd() + "/public/assets/images/products");
-  if (exists) throw new Error(exists ? "true" : "false");
+  const exists = await readdir(
+    process.cwd() + "/public/assets/images/products"
+  );
+  if (exists) throw new Error(exists.join(" | "));
   const productDirectories = (
     await readdir(process.cwd() + "/public/assets/images/products")
   ).map((path) => process.cwd() + "/public/assets/images/products/" + path);
