@@ -70,9 +70,9 @@ const Navigation: FC<NavigationProps> = ({}) => {
               </Link>
               <Link
                 className={`${styles.navLink}`}
-                href={`/products?filter=${FilterValues.NVAPE}`}
+                href={`/products?filter=${FilterValues.DVAPE}`}
               >
-                NICOTINE VAPES
+                DISPOSABLE VAPES
               </Link>
               <Link
                 className={`${styles.navLink}`}
