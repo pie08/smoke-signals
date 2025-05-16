@@ -12,8 +12,13 @@ interface GalleryProps {
 }
 
 const Gallery: FC<GalleryProps> = ({ imagePaths }) => {
+  // shop images show up first
+  const sortedImagePaths = [...imagePaths].sort((a) => {
+    if (a.path.includes("image/shop")) return 1;
+    return -1;
+  });
   // load images
-  const { parentRef, mounted } = useLoadImage(imagePaths);
+  const { parentRef, mounted } = useLoadImage(sortedImagePaths);
   const width = mounted ? window.innerWidth : 0;
 
   if (!mounted) return null;
