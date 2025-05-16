@@ -1,6 +1,6 @@
 export enum FilterValues {
   GLASS = "glass",
-  NVAPE = "nicotineVapes",
+  DVAPE = "disposableVapes",
   RVAPE = "refillableVapes",
   HVAPE = "herbalVapes",
   CBAT = "cartBatteries",
