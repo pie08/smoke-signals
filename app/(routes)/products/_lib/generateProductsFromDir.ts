@@ -14,9 +14,10 @@ export default async function generateProductsFromDir(
 
     // add data
     return files.map((name) => {
+      const productName = name.split(".")[0].split("-u")[0].replace("-", " ");
       return {
         imageSrc: `/assets/images/products/${category}/${name}`,
-        name: name.split(".")[0].replace("-", " ") + ` ${suffixString || ""}`,
+        name: productName + ` ${suffixString || ""}`,
         type: category,
       };
     }) as ProductData[];
