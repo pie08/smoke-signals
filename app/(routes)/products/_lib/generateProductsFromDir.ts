@@ -8,7 +8,7 @@ export default async function generateProductsFromDir(
 ) {
   try {
     // get product category from path
-    const category = productsPath.split("\\").pop() || "";
+    const category = productsPath.split(/[\\\\/]/).pop() || "";
     // get files
     const files = await readdir(productsPath);
 
