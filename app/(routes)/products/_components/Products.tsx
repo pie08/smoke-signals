@@ -18,7 +18,7 @@ const Products: FC<ProductsProps> = ({ products }) => {
         <ProductCard
           imageSrc={product.imageSrc}
           name={product.name}
-          key={product.name}
+          key={product.imageSrc}
         />
       ))}
     </div>

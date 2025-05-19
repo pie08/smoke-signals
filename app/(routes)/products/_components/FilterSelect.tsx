@@ -30,7 +30,10 @@ const FilterSelect: FC<FiltersProps> = ({ ...props }) => {
   // add existing filters to state on load
   useEffect(() => {
     const filterParams = searchParams.get("filter");
-    if (filterParams === null || filterParams.length < 1) return;
+    if (filterParams === null || filterParams.length < 1) {
+      setFilters([]);
+      return;
+    }
 
     const filters = filterParams.split("%2C");
     setFilters(filters as FilterValues[]);
