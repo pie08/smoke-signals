@@ -6,6 +6,7 @@ interface SortProps {
   className?: string;
 }
 
+// todo: make dropdown not appear off the page
 const Sort: FC<SortProps> = ({ className = "" }) => {
   return (
     <div className={`${styles.sort} ${className}`}>
