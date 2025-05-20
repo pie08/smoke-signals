@@ -30,7 +30,6 @@ const page: FC<pageProps> = async ({ searchParams }) => {
   const products = await getProducts({ sortBy, filters });
   const paginatedProducts = paginateProducts(products, page);
   const maxPages = Math.ceil(products.length / PRODUCTS_PAGE_SIZE);
-  console.log(products);
 
   return (
     <SubpageSection fill>
