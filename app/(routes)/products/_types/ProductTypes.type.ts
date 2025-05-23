@@ -16,4 +16,5 @@ export interface ProductData {
   imageSrc: string;
   name: string;
   type: string;
+  isFeatured: boolean;
 }

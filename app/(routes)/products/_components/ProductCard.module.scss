@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  position: relative;
+  overflow: hidden;
 
   & p {
     font-weight: 600;
@@ -17,4 +19,15 @@
     object-fit: cover;
     width: 100%;
   }
+}
+
+.featured {
+  font-size: 1.2rem;
+  padding: 0.4rem 3.2rem;
+  background-color: var(--color-primary-600);
+  color: var(--color-primary-50);
+  position: absolute;
+  top: 2rem;
+  left: -2.8rem;
+  rotate: -45deg;
 }

@@ -14,11 +14,13 @@ export default async function generateProductsFromDir(
 
     // add data
     return files.map((name) => {
-      const productName = name.split(".")[0].split("-u")[0].replace("-", " ");
+      const productName = name.split(".")[0].split("-")[0].replace("-", " ");
+      const isFeatured = name.includes("-f");
       return {
         imageSrc: `/assets/images/products/${category}/${name}`,
         name: productName + ` ${suffixString || ""}`,
         type: category,
+        isFeatured,
       };
     }) as ProductData[];
   } catch (err) {

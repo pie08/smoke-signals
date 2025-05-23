@@ -31,6 +31,7 @@ export async function getProducts({ sortBy, filters, page }: options) {
 
   // FILTER
   data = data.filter(({ type }) => {
+    console.log();
     // if no filter show all
     if (filters === null || filters.length === 0) return true;
 
@@ -39,7 +40,14 @@ export async function getProducts({ sortBy, filters, page }: options) {
   });
 
   // SORT
-  // todo: add featurted sort
+  if (sortBy === "featured") {
+    data.sort((a, b) => {
+      if (a.isFeatured) {
+        return -1;
+      }
+      return 0;
+    });
+  }
   if (sortBy === "az")
     data.sort((a, b) => {
       if (a.name < b.name) {
