@@ -1,0 +1,21 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  flex-grow: 1;
+
+  & div {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  @media screen and (max-width: 50em) {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.button {
+  min-width: 20rem;
+}

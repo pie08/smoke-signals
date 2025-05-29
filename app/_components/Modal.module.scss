@@ -1,10 +1,8 @@
 .window {
   position: fixed;
-  top: 0;
+  top: 50%;
   left: 0;
-  translate: -100% 0;
-  width: 100vw;
-  height: 100vh;
+  translate: -100% -50%;
   background-color: var(--color-gray-white);
   z-index: 9999;
   transition: all 0.2s;
@@ -13,14 +11,59 @@
   gap: 3.2rem;
   flex-direction: column;
 
-  overflow-y: scroll;
+  overflow-y: auto;
   padding-bottom: 2.4rem;
 
   & > div {
     padding: 0 2.4rem;
+    height: 100%;
   }
 
   &.open {
-    translate: 0% 0;
+    translate: -50% -50%;
+    left: 50%;
+  }
+
+  // if close button is disabled
+  &.padTop {
+    padding-top: 2.4rem;
+  }
+
+  // for mobile modals
+  @media screen and (max-width: 50em) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    translate: -100% 0;
+    width: 100vw;
+    height: 100vh;
+
+    &.open {
+      translate: 0 0;
+      left: 0;
+    }
+  }
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: all 0.2s;
+  visibility: hidden;
+  pointer-events: none;
+
+  &.open {
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: visible;
+    pointer-events: all;
+  }
+
+  // disable on mobile
+  @media screen and (max-width: 50em) {
+    display: none;
   }
 }

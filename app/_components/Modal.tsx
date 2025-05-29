@@ -22,11 +22,13 @@ const ModalContext = createContext({
 
 type ModalProps = {
   children: React.ReactNode;
+  defaultOpenId?: string;
 };
 
 interface WindowProps {
   children: React.ReactNode;
   windowId: string;
+  disableCloseButton?: boolean;
 }
 
 interface OpenProps {
@@ -38,8 +40,8 @@ interface ChildrenProps {
   onClick: () => void;
 }
 
-const Modal: FC<ModalProps> = ({ children }) => {
-  const [openId, setOpenId] = useState("");
+const Modal: FC<ModalProps> = ({ children, defaultOpenId = "" }) => {
+  const [openId, setOpenId] = useState(defaultOpenId || "");
   const [key, setKey] = useState(0);
 
   function open(id: string) {
@@ -61,7 +63,11 @@ const Modal: FC<ModalProps> = ({ children }) => {
   );
 };
 
-const ModalWindow: FC<WindowProps> = ({ children, windowId }) => {
+const ModalWindow: FC<WindowProps> = ({
+  children,
+  windowId,
+  disableCloseButton,
+}) => {
   const { close, openId, key } = useContext(ModalContext);
   const open = openId === windowId;
 
@@ -70,10 +76,23 @@ const ModalWindow: FC<WindowProps> = ({ children, windowId }) => {
   if (!mounted) return null;
 
   return createPortal(
-    <div className={`${styles.window} ${open ? styles.open : ""}`} key={key}>
-      <Button onClick={() => close()}>CLOSE</Button>
-      <div>{children}</div>
-    </div>,
+    <>
+      <div
+        className={`${styles.overlay} ${open ? styles.open : ""}`}
+        onClick={!disableCloseButton ? close : () => {}}
+      >
+        &nbsp;
+      </div>
+      <div
+        className={`${styles.window} ${open ? styles.open : ""} ${
+          disableCloseButton ? styles.padTop : ""
+        }`}
+        key={key}
+      >
+        {!disableCloseButton && <Button onClick={() => close()}>CLOSE</Button>}
+        <div>{children}</div>
+      </div>
+    </>,
     document.body
   );
 };

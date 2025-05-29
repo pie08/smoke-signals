@@ -4,6 +4,8 @@ import "./_styles/global.scss";
 import Navigation from "./_components/Navigation";
 import Footer from "./_components/Footer";
 import { Toaster } from "react-hot-toast";
+import { Modal, ModalWindow } from "./_components/Modal";
+import AgeGateModal from "./_components/AgeGateModal";
 
 // import fonts
 const poppins = Poppins({
@@ -38,10 +40,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${bebasNeue.variable}`}>
-        <Navigation />
-        <Toaster position="top-center" />
-        {children}
-        <Footer />
+        <Modal defaultOpenId="21modal">
+          <Navigation />
+          <Toaster position="top-center" />
+          {children}
+          <Footer />
+          <AgeGateModal />
+        </Modal>
       </body>
     </html>
   );

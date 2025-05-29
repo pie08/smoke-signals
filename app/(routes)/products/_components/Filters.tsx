@@ -17,7 +17,7 @@ const Filters: FC<FiltersProps> = ({}) => {
   if (!mounted) return <div></div>;
 
   return (
-    <Modal>
+    <>
       {/* modal is onyl for mobile filtering */}
       <ModalOpen opens="filter">
         <button className={styles.mobileFilters}>
@@ -32,7 +32,7 @@ const Filters: FC<FiltersProps> = ({}) => {
 
       {/* dont render in devices under 800px in width */}
       {width > 800 && <FilterSelect />}
-    </Modal>
+    </>
   );
 };
 

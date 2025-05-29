@@ -31,7 +31,6 @@ export async function getProducts({ sortBy, filters, page }: options) {
 
   // FILTER
   data = data.filter(({ type }) => {
-    console.log();
     // if no filter show all
     if (filters === null || filters.length === 0) return true;
 
