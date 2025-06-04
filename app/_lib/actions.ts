@@ -76,10 +76,13 @@ export async function sendMessage(
   };
 }
 
-export async function setCookie() {
-  console.log("cookie");
+export async function setCookie({
+  name,
+  value,
+}: {
+  name: string;
+  value: string;
+}) {
   const cookieStore = await cookies();
-  cookieStore.set("over21", "true");
-
-  // return Response.json({}, { status: 200 });
+  cookieStore.set(name, value);
 }

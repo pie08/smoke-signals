@@ -18,7 +18,9 @@ const AgeGateModal: FC<AgeGateModalProps> = ({}) => {
       <div className={styles.modal}>
         <h3>Are you 21+</h3>
         <div>
-          <form action={setCookie}>
+          <form
+            action={setCookie.bind(null, { name: "over21", value: "true" })}
+          >
             <Button className={styles.button} onClick={close}>
               YES
             </Button>
