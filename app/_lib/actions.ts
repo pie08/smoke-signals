@@ -4,6 +4,8 @@ import { z, ZodError } from "zod";
 import { ContactFormData } from "../_types/contactFormData.type";
 import { ContactFormResponse } from "../_types/contactFormResponse.type";
 import sendContactEmail from "./sendContactEmail";
+import { cookies } from "next/headers";
+import { setCookieResponse } from "../_types/setCookieResponse.type";
 
 export async function sendMessage(
   _: any,
@@ -72,4 +74,12 @@ export async function sendMessage(
     message: "Message sent!",
     success: true,
   };
+}
+
+export async function setCookie() {
+  console.log("cookie");
+  const cookieStore = await cookies();
+  cookieStore.set("over21", "true");
+
+  // return Response.json({}, { status: 200 });
 }

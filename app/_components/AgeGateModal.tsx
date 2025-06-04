@@ -1,10 +1,11 @@
 "use client";
 
-import { FC } from "react";
+import { FC, SyntheticEvent } from "react";
 import styles from "./AgeGateModal.module.scss";
 import { ModalWindow, useModal } from "./Modal";
 import Button from "./Button";
 import { useRouter } from "next/navigation";
+import { setCookie } from "../_lib/actions";
 
 type AgeGateModalProps = object;
 
@@ -17,9 +18,11 @@ const AgeGateModal: FC<AgeGateModalProps> = ({}) => {
       <div className={styles.modal}>
         <h3>Are you 21+</h3>
         <div>
-          <Button className={styles.button} onClick={close}>
-            YES
-          </Button>
+          <form action={setCookie}>
+            <Button className={styles.button} onClick={close}>
+              YES
+            </Button>
+          </form>
           <Button className={styles.button} onClick={router.back}>
             NO
           </Button>
