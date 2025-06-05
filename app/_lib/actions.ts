@@ -75,14 +75,3 @@ export async function sendMessage(
     success: true,
   };
 }
-
-export async function setCookie({
-  name,
-  value,
-}: {
-  name: string;
-  value: string;
-}) {
-  const cookieStore = await cookies();
-  cookieStore.set(name, value);
-}

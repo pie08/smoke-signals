@@ -5,7 +5,6 @@ import styles from "./AgeGateModal.module.scss";
 import { ModalWindow, useModal } from "./Modal";
 import Button from "./Button";
 import { useRouter } from "next/navigation";
-import { setCookie } from "../_lib/actions";
 
 type AgeGateModalProps = object;
 
@@ -13,18 +12,23 @@ const AgeGateModal: FC<AgeGateModalProps> = ({}) => {
   const { close } = useModal();
   const router = useRouter();
 
+  function handleClick() {
+    close();
+    // set cookie
+    fetch("/api/cookies", {
+      method: "POST",
+      body: JSON.stringify({ name: "over21", value: "true" }),
+    });
+  }
+
   return (
     <ModalWindow windowId="21modal" disableCloseButton>
       <div className={styles.modal}>
         <h3>Are you 21+</h3>
         <div>
-          <form
-            action={setCookie.bind(null, { name: "over21", value: "true" })}
-          >
-            <Button className={styles.button} onClick={close}>
-              YES
-            </Button>
-          </form>
+          <Button className={styles.button} onClick={handleClick}>
+            YES
+          </Button>
           <Button className={styles.button} onClick={router.back}>
             NO
           </Button>

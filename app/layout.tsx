@@ -6,6 +6,7 @@ import Footer from "./_components/Footer";
 import { Toaster } from "react-hot-toast";
 import { Modal, ModalWindow } from "./_components/Modal";
 import AgeGateModal from "./_components/AgeGateModal";
+import { cookies } from "next/headers";
 
 // import fonts
 const poppins = Poppins({
@@ -32,11 +33,13 @@ export const metadata: Metadata = {
 };
 
 // create root
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const isOver21 = (await cookies()).get("over21")?.value || false;
+
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${bebasNeue.variable}`}>
@@ -45,7 +48,7 @@ export default function RootLayout({
           <Toaster position="top-center" />
           {children}
           <Footer />
-          <AgeGateModal />
+          {isOver21 || <AgeGateModal />}
         </Modal>
       </body>
     </html>
