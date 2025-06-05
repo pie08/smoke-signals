@@ -1,6 +1,6 @@
 import { cookies } from "next/headers";
 
-export async function POST(req: Response) {
+export async function POST(req: Request) {
   const { name, value }: { name: string; value: string } = await req.json();
   const cookieStore = await cookies();
   cookieStore.set(name, value);
