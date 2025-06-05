@@ -17,6 +17,7 @@ const Gallery: FC<GalleryProps> = ({ imagePaths }) => {
     if (a.path.includes("image/shop")) return 1;
     return -1;
   });
+  console.log(sortedImagePaths);
   // load images
   const { parentRef, mounted } = useLoadImage(sortedImagePaths);
   const width = mounted ? window.innerWidth : 0;
