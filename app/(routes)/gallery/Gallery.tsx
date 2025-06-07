@@ -2,13 +2,13 @@
 
 import { FC, useState } from "react";
 import styles from "./Gallery.module.scss";
-import { ImageData } from "@/app/_lib/getAllImagePaths";
 import { useLoadImage } from "./_lib/useLoadImages";
 import Button from "@/app/_components/Button";
 import { GALLERY_PAGE_SIZE } from "@/app/constants";
+import { ManifestData } from "@/manifests/generateAssetsManifest";
 
 interface GalleryProps {
-  imagePaths: ImageData[];
+  imagePaths: ManifestData[];
 }
 
 const Gallery: FC<GalleryProps> = ({ imagePaths }) => {

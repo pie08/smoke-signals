@@ -1,0 +1,1358 @@
+[
+  {
+    "imageSrc": "/assets/images/products/cartBatteries/ccell palm pro-f.jpeg",
+    "name": "ccell palm pro",
+    "type": "cartBatteries",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/cartBatteries/divinci artiq.jpeg",
+    "name": "divinci artiq",
+    "type": "cartBatteries",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cartBatteries/eleaf mini-f.jpeg",
+    "name": "eleaf mini",
+    "type": "cartBatteries",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/cartBatteries/lookah turtle.jpeg",
+    "name": "lookah turtle",
+    "type": "cartBatteries",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cartBatteries/lookah zero.jpeg",
+    "name": "lookah zero",
+    "type": "cartBatteries",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cartBatteries/o pen.webp",
+    "name": "o pen",
+    "type": "cartBatteries",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cartBatteries/ooze twist battery.jpeg",
+    "name": "ooze twist battery",
+    "type": "cartBatteries",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cartBatteries/pulsar 2.0-f.jpeg",
+    "name": "pulsar 2",
+    "type": "cartBatteries",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/cartBatteries/Yocan uni 3.0.jpeg",
+    "name": "Yocan uni 3",
+    "type": "cartBatteries",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cartBatteries/yocan uni pro.jpeg",
+    "name": "yocan uni pro",
+    "type": "cartBatteries",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cartBatteries/yocan uni s.jpeg",
+    "name": "yocan uni s",
+    "type": "cartBatteries",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cartBatteries/yocan uni twist.jpeg",
+    "name": "yocan uni twist",
+    "type": "cartBatteries",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/acid-f.jpeg",
+    "name": "acid",
+    "type": "cigars",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/arturo fuente.jpeg",
+    "name": "arturo fuente",
+    "type": "cigars",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/deadwood-cigars.jpeg",
+    "name": "deadwood",
+    "type": "cigars",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/factory smokes.jpeg",
+    "name": "factory smokes",
+    "type": "cigars",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/Gurkha-f.jpg",
+    "name": "Gurkha",
+    "type": "cigars",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/Liga privada cigars-f.jpeg",
+    "name": "Liga privada cigars",
+    "type": "cigars",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/macadudo.jpeg",
+    "name": "macadudo",
+    "type": "cigars",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/macanudo inspirado.jpeg",
+    "name": "macanudo inspirado",
+    "type": "cigars",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/macanudo.jpeg",
+    "name": "macanudo",
+    "type": "cigars",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/punch cigars.jpeg",
+    "name": "punch cigars",
+    "type": "cigars",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/rocky patel.png",
+    "name": "rocky patel",
+    "type": "cigars",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/romeo y julieta nicaragua.webp",
+    "name": "romeo y julieta nicaragua",
+    "type": "cigars",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/romeo y julieta reserve.webp",
+    "name": "romeo y julieta reserve",
+    "type": "cigars",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/romeo y julieta.webp",
+    "name": "romeo y julieta",
+    "type": "cigars",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/tabak.jpeg",
+    "name": "tabak",
+    "type": "cigars",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/cigars/undercrown.jpeg",
+    "name": "undercrown",
+    "type": "cigars",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/disposableVapes/Adjust disposables.jpeg",
+    "name": "Adjust disposables",
+    "type": "disposableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/disposableVapes/Crave disposables.jpeg",
+    "name": "Crave disposables",
+    "type": "disposableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/disposableVapes/Fifty Bar disposable-f.png",
+    "name": "Fifty Bar disposable",
+    "type": "disposableVapes",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/disposableVapes/Fifty bar fruitia disposable.jpeg",
+    "name": "Fifty bar fruitia disposable",
+    "type": "disposableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/disposableVapes/Fifty bar hidden hills disposable.jpeg",
+    "name": "Fifty bar hidden hills disposable",
+    "type": "disposableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/disposableVapes/Geek bar jam edition.jpeg",
+    "name": "Geek bar jam edition",
+    "type": "disposableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/disposableVapes/Geek bar pulse slush.jpeg",
+    "name": "Geek bar pulse slush",
+    "type": "disposableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/disposableVapes/geek bar pulse.jpeg",
+    "name": "geek bar pulse",
+    "type": "disposableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/disposableVapes/geekbar mintz.jpeg",
+    "name": "geekbar mintz",
+    "type": "disposableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/disposableVapes/Lost mary.jpeg",
+    "name": "Lost mary",
+    "type": "disposableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/disposableVapes/Off stamp.jpeg",
+    "name": "Off stamp",
+    "type": "disposableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/disposableVapes/oxbar disposable.jpeg",
+    "name": "oxbar disposable",
+    "type": "disposableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/disposableVapes/Raz gush edition.jpeg",
+    "name": "Raz gush edition",
+    "type": "disposableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/disposableVapes/Raz Punch edition.jpeg",
+    "name": "Raz Punch edition",
+    "type": "disposableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/disposableVapes/viho trx 50k.jpeg",
+    "name": "viho trx 50k",
+    "type": "disposableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/AFM Glass waterpipes.jpeg",
+    "name": "AFM Glass waterpipes",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/Alien flower monkey glass.jpeg",
+    "name": "Alien flower monkey glass",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/Dragon glass rig.jpeg",
+    "name": "Dragon glass rig",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/empire-u1-f.webp",
+    "name": "empire",
+    "type": "glass",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/empire-u10.webp",
+    "name": "empire",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/empire-u12.webp",
+    "name": "empire",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/empire-u13.webp",
+    "name": "empire",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/empire-u14.webp",
+    "name": "empire",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/empire-u15.webp",
+    "name": "empire",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/empire-u19.webp",
+    "name": "empire",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/empire-u2.webp",
+    "name": "empire",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/empire-u3.webp",
+    "name": "empire",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/empire-u4.webp",
+    "name": "empire",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/empire-u5.webp",
+    "name": "empire",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/empire-u6.webp",
+    "name": "empire",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/empire-u7.webp",
+    "name": "empire",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/empire-u8.webp",
+    "name": "empire",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/empire-u9.webp",
+    "name": "empire",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/eyce silicone waterpipe.jpeg",
+    "name": "eyce silicone waterpipe",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/freeze pipe handpipe.webp",
+    "name": "freeze pipe handpipe",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/freezepipe bubbler.webp",
+    "name": "freezepipe bubbler",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/freezepipe collection-f.jpeg",
+    "name": "freezepipe collection",
+    "type": "glass",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/freezepipe waterpipe-u2.webp",
+    "name": "freezepipe waterpipe",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/freezepipe waterpipe.webp",
+    "name": "freezepipe waterpipe",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/freezepipe-u2.jpeg",
+    "name": "freezepipe",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/freezepipe.jpeg",
+    "name": "freezepipe",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/glass lab 303-f.jpeg",
+    "name": "glass lab 303",
+    "type": "glass",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/glass lab 303-u2.png",
+    "name": "glass lab 303",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/glass lab 303-u3.png",
+    "name": "glass lab 303",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/glass lab 303-u4.jpeg",
+    "name": "glass lab 303",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/glass lab 303-u5.jpeg",
+    "name": "glass lab 303",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/Glass lab coil perk.jpeg",
+    "name": "Glass lab coil perk",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/Glass lab spoons.jpeg",
+    "name": "Glass lab spoons",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/Glass lab wig wag.jpeg",
+    "name": "Glass lab wig wag",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/Glass rig.jpeg",
+    "name": "Glass rig",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/grav bub.jpeg",
+    "name": "grav bub",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/grav deco.jpeg",
+    "name": "grav deco",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/grav empree.jpeg",
+    "name": "grav empree",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/Grav labs showerheard waterpipe.webp",
+    "name": "Grav labs showerheard waterpipe",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/Grav labs waterpipes.jpeg",
+    "name": "Grav labs waterpipes",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/grav lg clear.jpeg",
+    "name": "grav lg clear",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/grav mini round.jpeg",
+    "name": "grav mini round",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/grav slush.jpeg",
+    "name": "grav slush",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/grav sm wide 2.jpeg",
+    "name": "grav sm wide 2",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/grav small wide.jpeg",
+    "name": "grav small wide",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/grav upline.jpeg",
+    "name": "grav upline",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/grav waterpipe 2.jpeg",
+    "name": "grav waterpipe 2",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/grav waterpipe.jpeg",
+    "name": "grav waterpipe",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/Gravity waterpipes Gravlabs.webp",
+    "name": "Gravity waterpipes Gravlabs",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/Jellyfish-u2-f.jpeg",
+    "name": "Jellyfish",
+    "type": "glass",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/Jellyfish-u3.jpeg",
+    "name": "Jellyfish",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/Jellyfish-u4.jpeg",
+    "name": "Jellyfish",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/Jellyfish-u5.jpeg",
+    "name": "Jellyfish",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/Jellyfish.jpeg",
+    "name": "Jellyfish",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/journey pipe.jpeg",
+    "name": "journey pipe",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/Soft glass waterpipes.jpeg",
+    "name": "Soft glass waterpipes",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/stone tech-u2.webp",
+    "name": "stone tech",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/stone tech-u3.webp",
+    "name": "stone tech",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/stone tech-u4.webp",
+    "name": "stone tech",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/stone tech.webp",
+    "name": "stone tech",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/glass/Twisted sisters soft glass waterpipes.jpeg",
+    "name": "Twisted sisters soft glass waterpipes",
+    "type": "glass",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/arizer air max.jpeg",
+    "name": "arizer air max",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/Arizer Extreme Q.jpeg",
+    "name": "Arizer Extreme Q",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/Arizer XQ2.jpeg",
+    "name": "Arizer XQ2",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/crafty plus vaporizer.jpeg",
+    "name": "crafty plus vaporizer",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/lookah dragon egg.webp",
+    "name": "lookah dragon egg",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/lookah mini unicorn.webp",
+    "name": "lookah mini unicorn",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/lookah seahorse-f.webp",
+    "name": "lookah seahorse",
+    "type": "herbalVapes",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/Mighty vape.jpeg",
+    "name": "Mighty vape",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/pax pro vaporizer.webp",
+    "name": "pax pro vaporizer",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/Puffco hot knife.png",
+    "name": "Puffco hot knife",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/puffco Peak pro xl.png",
+    "name": "puffco Peak pro xl",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/Puffco peak pro.png",
+    "name": "Puffco peak pro",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/puffco peak-f.png",
+    "name": "puffco peak",
+    "type": "herbalVapes",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/Puffco pivot-f.png",
+    "name": "Puffco pivot",
+    "type": "herbalVapes",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/Puffco proxy.png",
+    "name": "Puffco proxy",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/starry vaporizer.jpeg",
+    "name": "starry vaporizer",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/venty vaporizer.jpeg",
+    "name": "venty vaporizer",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/volcano classic.jpeg",
+    "name": "volcano classic",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/volcano dry herb-f.jpeg",
+    "name": "volcano dry herb",
+    "type": "herbalVapes",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/volcano hybrid.jpeg",
+    "name": "volcano hybrid",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/yocan evolve plus xy.jpeg",
+    "name": "yocan evolve plus xy",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/yocan evolve plus.jpeg",
+    "name": "yocan evolve plus",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/yocan hit.png",
+    "name": "yocan hit",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/herbalVapes/yocan vane.jpeg",
+    "name": "yocan vane",
+    "type": "herbalVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/CBD Carts.webp",
+    "name": "CBD Carts",
+    "type": "kratom",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/CBD Distillery softgels.webp",
+    "name": "CBD Distillery softgels",
+    "type": "kratom",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/CBD distillery tinctures-f.jpeg",
+    "name": "CBD distillery tinctures",
+    "type": "kratom",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/CBD Flower Gold Standard.jpeg",
+    "name": "CBD Flower Gold Standard",
+    "type": "kratom",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/CBD Flower nh hemp co.png",
+    "name": "CBD Flower nh hemp co",
+    "type": "kratom",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/CBD Lotion.webp",
+    "name": "CBD Lotion",
+    "type": "kratom",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/Donuts Kratom-Mango.jpg",
+    "name": "Donuts Kratom",
+    "type": "kratom",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/Kama 100mg kratom-f.jpeg",
+    "name": "Kama 100mg kratom",
+    "type": "kratom",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/Kama Kratom extract.jpeg",
+    "name": "Kama Kratom extract",
+    "type": "kratom",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/Kama Kratom shots.jpeg",
+    "name": "Kama Kratom shots",
+    "type": "kratom",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/kratom kava shots.jpeg",
+    "name": "kratom kava shots",
+    "type": "kratom",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/MIT 45 Kratom gel.jpeg",
+    "name": "MIT 45 Kratom gel",
+    "type": "kratom",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/MIT 45 Kratom shots.jpeg",
+    "name": "MIT 45 Kratom shots",
+    "type": "kratom",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/MIT45 kratom energy shot.jpeg",
+    "name": "MIT45 kratom energy shot",
+    "type": "kratom",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/Modus 7 Hydroxy kratom.jpeg",
+    "name": "Modus 7 Hydroxy kratom",
+    "type": "kratom",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/Modus Kratom shots.jpeg",
+    "name": "Modus Kratom shots",
+    "type": "kratom",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/OPMS Kratom.jpeg",
+    "name": "OPMS Kratom",
+    "type": "kratom",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/Pet CBD CBD Distillery.webp",
+    "name": "Pet CBD CBD Distillery",
+    "type": "kratom",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/True kratom capsules.webp",
+    "name": "True kratom capsules",
+    "type": "kratom",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/True Kratom powder.webp",
+    "name": "True Kratom powder",
+    "type": "kratom",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/kratom/wildcraft kratom-f.jpeg",
+    "name": "wildcraft kratom",
+    "type": "kratom",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/nicotinePouches/alp pouch-f.jpeg",
+    "name": "alp pouch",
+    "type": "nicotinePouches",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/nicotinePouches/gpulse.jpeg",
+    "name": "gpulse",
+    "type": "nicotinePouches",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/nicotinePouches/juice head pouches-f.jpeg",
+    "name": "juice head pouches",
+    "type": "nicotinePouches",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/nicotinePouches/zimo pouch.jpeg",
+    "name": "zimo pouch",
+    "type": "nicotinePouches",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/nicotinePouches/zyn nicotine pouches.jpeg",
+    "name": "zyn nicotine pouches",
+    "type": "nicotinePouches",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/refillableVapes/aegis her.jpeg",
+    "name": "aegis her",
+    "type": "refillableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/refillableVapes/aegis legend 200.jpeg",
+    "name": "aegis legend 200",
+    "type": "refillableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/refillableVapes/aegis legend.png",
+    "name": "aegis legend",
+    "type": "refillableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/refillableVapes/digimax geekvape-f.jpeg",
+    "name": "digimax geekvape",
+    "type": "refillableVapes",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/refillableVapes/geek vape z 200.jpeg",
+    "name": "geek vape z 200",
+    "type": "refillableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/refillableVapes/Geekvape b100.jpeg",
+    "name": "Geekvape b100",
+    "type": "refillableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/refillableVapes/geekvape e100.jpeg",
+    "name": "geekvape e100",
+    "type": "refillableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/refillableVapes/geekvape h45.jpeg",
+    "name": "geekvape h45",
+    "type": "refillableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/refillableVapes/geekvape wenax q mini.jpeg",
+    "name": "geekvape wenax q mini",
+    "type": "refillableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/refillableVapes/geekvape wenax q.jpeg",
+    "name": "geekvape wenax q",
+    "type": "refillableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/refillableVapes/nord.jpg",
+    "name": "nord",
+    "type": "refillableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/refillableVapes/smok nord c.jpeg",
+    "name": "smok nord c",
+    "type": "refillableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/refillableVapes/sonder q-f.jpeg",
+    "name": "sonder q",
+    "type": "refillableVapes",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/refillableVapes/vapresso 4 mini.jpeg",
+    "name": "vapresso 4 mini",
+    "type": "refillableVapes",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/refillableVapes/vapresso nano 4-f.jpeg",
+    "name": "vapresso nano 4",
+    "type": "refillableVapes",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/7 seas tobacco-f.jpeg",
+    "name": "7 seas tobacco",
+    "type": "tobacco",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/al fahker.webp",
+    "name": "al fahker",
+    "type": "tobacco",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/American Club.jpeg",
+    "name": "American Club",
+    "type": "tobacco",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/american spirit.jpeg",
+    "name": "american spirit",
+    "type": "tobacco",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/borkum riff tobacco.jpeg",
+    "name": "borkum riff tobacco",
+    "type": "tobacco",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/captain black.jpeg",
+    "name": "captain black",
+    "type": "tobacco",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/coconara coals.jpeg",
+    "name": "coconara coals",
+    "type": "tobacco",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/drum tobacco.jpeg",
+    "name": "drum tobacco",
+    "type": "tobacco",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/Gambler tobacco.jpeg",
+    "name": "Gambler tobacco",
+    "type": "tobacco",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/gambler tube cut.jpeg",
+    "name": "gambler tube cut",
+    "type": "tobacco",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/hookah.jpeg",
+    "name": "hookah",
+    "type": "tobacco",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/macbaren tobacco.jpeg",
+    "name": "macbaren tobacco",
+    "type": "tobacco",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/orlik tobacco.jpeg",
+    "name": "orlik tobacco",
+    "type": "tobacco",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/starbuzz.jpeg",
+    "name": "starbuzz",
+    "type": "tobacco",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/stokebye-f.webp",
+    "name": "stokebye",
+    "type": "tobacco",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/super value.jpeg",
+    "name": "super value",
+    "type": "tobacco",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/the Good stuff-f.jpeg",
+    "name": "the Good stuff",
+    "type": "tobacco",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/three kings hookah coal.jpeg",
+    "name": "three kings hookah coal",
+    "type": "tobacco",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/tobacco galleria.jpeg",
+    "name": "tobacco galleria",
+    "type": "tobacco",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/top tobacco.jpeg",
+    "name": "top tobacco",
+    "type": "tobacco",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/tobacco/ya layl shisha.jpeg",
+    "name": "ya layl shisha",
+    "type": "tobacco",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/bad drip.jpeg",
+    "name": "bad drip",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/bams cannoli.png",
+    "name": "bams cannoli",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/beard vape co-f.jpeg",
+    "name": "beard vape co",
+    "type": "vapeJuice",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/candy king.jpeg",
+    "name": "candy king",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/cannoli be one.png",
+    "name": "cannoli be one",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/custard monster.jpeg",
+    "name": "custard monster",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/deep cuts.png",
+    "name": "deep cuts",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/french dude.jpeg",
+    "name": "french dude",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/frozen fruit monster.png",
+    "name": "frozen fruit monster",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/fruit monster.jpeg",
+    "name": "fruit monster",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/graham slam.jpeg",
+    "name": "graham slam",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/innevape.png",
+    "name": "innevape",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/jam monster-f.png",
+    "name": "jam monster",
+    "type": "vapeJuice",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/jimmy the juiceman.jpeg",
+    "name": "jimmy the juiceman",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/juice head.jpeg",
+    "name": "juice head",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/keep it 100.png",
+    "name": "keep it 100",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/micro brew vapor.jpeg",
+    "name": "micro brew vapor",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/naked.png",
+    "name": "naked",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/noms-f.jpeg",
+    "name": "noms",
+    "type": "vapeJuice",
+    "isFeatured": true
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/one up.jpeg",
+    "name": "one up",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/pacha mama.jpeg",
+    "name": "pacha mama",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/pod juice.png",
+    "name": "pod juice",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/pod monster.jpeg",
+    "name": "pod monster",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/primus .png",
+    "name": "primus ",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/propoganda.png",
+    "name": "propoganda",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/pulse liq.jpeg",
+    "name": "pulse liq",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/reds vape juice.webp",
+    "name": "reds vape juice",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/sad boy.png",
+    "name": "sad boy",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/salt bae.jpeg",
+    "name": "salt bae",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/slapple.jpeg",
+    "name": "slapple",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/suicide bunny.jpeg",
+    "name": "suicide bunny",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/the milk.jpeg",
+    "name": "the milk",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/the one.jpeg",
+    "name": "the one",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/twist.png",
+    "name": "twist",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/vape pink.png",
+    "name": "vape pink",
+    "type": "vapeJuice",
+    "isFeatured": false
+  },
+  {
+    "imageSrc": "/assets/images/products/vapeJuice/vapetasia.jpeg",
+    "name": "vapetasia",
+    "type": "vapeJuice",
+    "isFeatured": false
+  }
+]

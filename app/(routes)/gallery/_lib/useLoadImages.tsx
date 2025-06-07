@@ -1,10 +1,10 @@
-import { ImageData } from "@/app/_lib/getAllImagePaths";
+import { ManifestData } from "@/manifests/generateAssetsManifest";
 import { useMounted } from "@/app/_lib/useMounted";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { renderToString } from "react-dom/server";
 
-export function useLoadImage(imagePaths: ImageData[]) {
+export function useLoadImage(imagePaths: ManifestData[]) {
   const parentRef = useRef<HTMLDivElement | null>(null);
   const mounted = useMounted();
 
