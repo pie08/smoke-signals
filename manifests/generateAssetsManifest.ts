@@ -65,8 +65,6 @@ async function generateManifest() {
       }
     })
   );
-  console.log(filesWithData);
-
   const outputPath = path.join(
     process.cwd(),
     "manifests",
