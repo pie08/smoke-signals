@@ -48,7 +48,7 @@ export default async function RootLayout({
           <Toaster position="top-center" />
           {children}
           <Footer />
-          {isOver21 || <AgeGateModal />}
+          {!isOver21 && <AgeGateModal />}
         </Modal>
       </body>
     </html>

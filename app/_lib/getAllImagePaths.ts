@@ -15,6 +15,7 @@ async function addAllFilesRecursive(rootPath: string, pathArr: string[] = []) {
   try {
     // get all files
     const files = await readdir(rootPath);
+    console.log(files);
 
     // add all non directories to arr
     for (const fileName of files) {

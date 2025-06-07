@@ -16,7 +16,6 @@ type pageProps = object;
 const page: FC<pageProps> = async ({}) => {
   // get all images
   const imagePaths = await getAllImagePaths("/public/assets/images");
-  console.log(imagePaths.slice(100));
 
   return (
     <SubpageSection fill>
