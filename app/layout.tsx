@@ -7,6 +7,7 @@ import { Toaster } from "react-hot-toast";
 import { Modal, ModalWindow } from "./_components/Modal";
 import AgeGateModal from "./_components/AgeGateModal";
 import { cookies } from "next/headers";
+import { Analytics } from "@vercel/analytics/next";
 
 // import fonts
 const poppins = Poppins({
@@ -43,6 +44,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${bebasNeue.variable}`}>
+        <Analytics />
         <Modal defaultOpenId="21modal">
           <Navigation />
           <Toaster position="top-center" />
